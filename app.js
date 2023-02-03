@@ -3,7 +3,7 @@ const
     express = require('express'),
     path = require('path'),
     host = '127.0.0.1',
-    port = 3000,
+    port = 5500,
     app = express();
 
 //Назначаем папку для статических элементов
@@ -15,10 +15,9 @@ const urlencodedParser = express.urlencoded({extended: true});
 //Запускаем функцию post с необходимыми параметрами
 app.post("/", urlencodedParser, (req, res) => {   
     console.log("Отправка заявки...");
-    console.log(req.body.inp);
-    res.redirect("index.html")
+    console.log([req.body.name, req.body.seminame, req.body.number, req.body.email]);
+    res.redirect("/")
 });
-
 
 //Прослушиваем
 app.listen(port, host, () => {

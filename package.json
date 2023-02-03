@@ -4,7 +4,8 @@
   "description": "Верёвочный парк",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "debug": "nodemon app.js"
   },
   "repository": {
     "type": "git",

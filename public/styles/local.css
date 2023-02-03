@@ -1,0 +1,83 @@
+.bi-list
+{
+    cursor: pointer;
+    margin-left: 95%;
+}
+
+#req
+{
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: relative;
+    width: 30vw;
+    height: 20vh;
+    text-align: center;
+    word-wrap: break-word;
+    margin-top:  15vh;
+    margin-bottom: 15vh;
+}
+
+#video
+{
+    background-color: aquamarine;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+#discription
+{
+    background-color: wheat;
+    width: 100%;
+    height: 50%;
+    position:relative;
+}
+
+#form
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70vw;
+    height: 40vh;
+    display: block;
+}
+
+#map
+{
+    background-color: black;
+    width: 100%;
+    height: 60vh;
+    position:relative;
+    display: block;
+}
+
+.inputgroup
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#send
+{
+    width: 11vw;
+    margin: 0 auto;
+    outline: 0;
+    border-radius: 0.5em;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: transparent;
+    text-align: center;
+    transition: linear .3s;
+    color: white;
+}
+
+#send:hover
+{
+    background-color: blueviolet;
+}
+
+#send:active
+{
+    background-color: red;
+}
