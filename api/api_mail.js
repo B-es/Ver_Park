@@ -33,3 +33,5 @@ async function sendToEmail(email){
 }
 
 sendToEmail(testEmailAccount).catch(console.error);
+
+//https://ethereal.email/messages
