@@ -15,6 +15,7 @@
     word-wrap: break-word;
     margin-top:  15vh;
     margin-bottom: 15vh;
+    transition: linear .3s;
 }
 
 #video

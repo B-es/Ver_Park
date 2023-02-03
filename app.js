@@ -2,9 +2,9 @@
 const 
     express = require('express'),
     path = require('path'),
-    host = '127.0.0.1',
-    port = 5500,
     app = express();
+
+require('dotenv').config()
 
 //Назначаем папку для статических элементов
 app.use(express.static(path.join(__dirname, "/public")));
@@ -13,13 +13,14 @@ app.use(express.static(path.join(__dirname, "/public")));
 const urlencodedParser = express.urlencoded({extended: true});
 
 //Запускаем функцию post с необходимыми параметрами
-app.post("/", urlencodedParser, (req, res) => {   
+app.post("/req", urlencodedParser, (req, res) => {   
     console.log("Отправка заявки...");
     console.log([req.body.name, req.body.seminame, req.body.number, req.body.email]);
     res.redirect("/")
 });
 
 //Прослушиваем
-app.listen(port, host, () => {
-    console.log("Server was dead before we've started");
+app.listen(process.env.PORT, process.env.HOST, () => {
+    let s = process.env.HOST + ':' + String(process.env.PORT);
+    console.log("Server was dead before we've started on "+s);
 });
