@@ -4,6 +4,129 @@
     margin-left: 95%;
 }
 
+/* ФОРМА */
+.Forma
+{
+    display: none;
+    width: 65%;
+    height: 100vh;
+    z-index: -10;
+    background-color: black;
+    left: auto;
+    top:0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    overflow-y: auto;
+}
+
+.bi-x
+{
+    color: gray; 
+    transition: 0.8s; 
+}
+
+.bi-x:hover
+{
+    color: white;
+    cursor: pointer;
+    transition: 0.8s; 
+}
+
+.close-btn
+{
+    display: flex;
+    justify-content: right;
+    margin-right: 1em;
+    margin-top: 1.5em;
+}
+
+.head-form
+{
+    font-size: 2.5em;
+    color: gray;
+}
+
+.name-form
+{
+    margin-left: 1%;
+    margin-top: .5em;
+    background-color: whitesmoke;
+}
+
+.tel-form
+{
+    margin-left: 1%;
+    margin-top: .5em; 
+    background-color: whitesmoke;
+}
+
+.email-form
+{
+    margin-left: 1%;
+    margin-top: .5em; 
+    background-color: whitesmoke;
+}
+
+.comment
+{
+    margin-top: .5em; 
+}
+
+.text-area-comment
+{
+    margin-left: 1%;
+    width: 25em;
+    height: 10em;
+    outline: none;
+    background-color: whitesmoke;
+}
+
+.send-btn
+{
+    border-radius: 20px;
+    background-color: whitesmoke;
+    width: 15em;
+    height: 3em;
+    transition: 0.8s;
+    margin-left: 1em;
+}
+
+.send-btn:hover
+{
+    background-color: blue;
+    transition: 0.8s;
+}
+
+@keyframes move-left 
+{
+    0%
+    {
+        right: -1000px; 
+    } 
+    100%
+    {
+        right: 0px;
+    }   
+}
+
+@keyframes move-right 
+{
+    0%
+    {
+        right: 0px; 
+    } 
+    100%
+    {
+        right: -1100px;
+        display: none;
+        z-index: -10;
+        animation-fill-mode:forwards;
+    }   
+}
+
+
+
 #req
 {
     left: 50%;
