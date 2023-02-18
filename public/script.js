@@ -25,3 +25,15 @@ c.onclick=function()
     document.getElementById('forma').style.animation= "move-right 1.5s ease-in-out 0s"
     document.getElementById('forma').style.animationFillMode="forwards"
 }
+
+//Загрузочный экран
+
+window.onload = function() 
+{
+
+    setTimeout(function() 
+    {
+        document.getElementById('preloader').style.display = "none";
+    }, 400);
+
+};
