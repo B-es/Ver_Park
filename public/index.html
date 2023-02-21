@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/local.css">
     <link rel="icon" href="https://i.ytimg.com/vi/KSUjsngAjuc/hqdefault.jpg">
@@ -14,7 +15,9 @@
 <body>
 
     <div class = "Pre-loaded" id = "preloader">
-        <p class = "Text-pre-load">Идет загрузка сайта...</p>
+        <div class="quiver"><span class="arrows st"></span><span class="arrows nd"></span><span class="arrows rd"></span><span class="arrows th"></span><span class="arrows fth"></span>
+        <span class="loading">Загрузка</span>
+        </div>
     </div>
 
     <nav>
@@ -51,8 +54,43 @@
         <button class="btn btn-danger" id="req">Оставить заявку</button>
         <section id="video"></section>
         <section id="discription">
-            <p class="discription-text" data-aos="fade-up">"ТАНЗАНИЯ" - уникальный веревочный парк для детей и взрослых в центре города. Только в нашем парке есть 4 троллея! Только наш парк находится в тени сосновых деревьев в самом центре города.</p>
-            <section class="discription-image" data-aos="flip-left"></section>
+
+            <section class="first-discription-sec">
+                <p class="first-discription-text" data-aos="fade-up"><mark class="important-info"><b><strong>"ТАНЗАНИЯ"</strong></b></mark> - уникальный веревочный парк для детей и взрослых в центре города. Только в нашем парке есть 4 троллея! Только наш парк находится в тени сосновых деревьев в самом центре города.
+                    <br /><br /> Только в нашем парке есть <mark class="important-info"><b><strong>4 троллея!</strong></b></mark>
+                    <br /><br /> Только наш парк находится <mark class="important-info"><b><strong>в тени сосновых деревьев в самом центре города.</strong></b></mark>
+                </p>
+                <section class="first-discription-image" data-aos="flip-left"></section>
+            </section>
+
+            <section class="second-discription-sec">
+                <section class="second-discription-image" data-aos="flip-right"></section>
+                <p class="second-discription-text" data-aos="fade-up">Высота маршрутов <mark class="important-info"><b><strong>от 0.5 метра до 8 метров.</strong></b></mark>
+                    <br /><br />Маршруты оборудованы <mark class="important-info"><b><strong>непрерывной линией страховки.</strong></b></mark></p>
+            </section>
+
+            <section class="third-discription-sec">
+                <p class="third-discription-text" data-aos="fade-up">Разная сложность препятствий делает парк доступным для людей <mark class="important-info"><b><strong>любого возраста и физической подготовки.</strong></b></mark></p>
+                <section class="third-discription-image" data-aos="flip-left"></section>
+            </section>
+            
+            <section class="fourth-discription-sec">
+                <section class="fourth-discription-image" data-aos="flip-right"></section>
+                <p class="fourth-discription-text" data-aos="fade-up">У нас есть трассы <mark class="important-info"><b><strong>для самых маленьких</strong></b></mark>, среднего и высокого уровня сложности.</p>
+            </section>
+
+            <section class="fifth-discription-sec">
+                <p class="fifth-discription-text" data-aos="fade-up">Мы предлагаем <mark class="important-info"><b><strong>активный, экстремальный</strong></b></mark> отдых для всех желающих.</p>
+                <section class="fifth-discription-image" data-aos="flip-left"></section>
+            </section>
+
+            <section class="sixth-discription-sec">
+                <section class="sixth-discription-image" data-aos="flip-right"></section>
+                <p class="sixth-discription-text" data-aos="fade-up">
+                    В нашем парке можно не только покорить вершины, но и<mark class="important-info"><b><strong>поиграть в интересные игры на свежем воздухе, провести день рождения, корпоратив и другие мероприятия.</strong></b></mark>
+                    <br /><br /> Мы предлагаем посиделки в единственном в городе <mark class="important-info"><b><strong>Домике на дереве.</strong></b></mark></p>
+            </section>
+
         </section>
         <section id="form">
             <form method="post" action="/req">
@@ -72,12 +110,12 @@
 
 
 
-    <footer>
+    <!-- <footer>
         <section id="info">
             <p>Рандомный номер</p>
             <p>Рандомный адрес</p>
         </section>
-    </footer>
+    </footer> -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
