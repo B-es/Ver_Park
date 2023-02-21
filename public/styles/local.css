@@ -201,7 +201,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* padding-top: 25vh; */
 }
 
 .second-discription-text
@@ -233,7 +232,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* padding-top: 25vh; */
 }
 
 .third-discription-text
@@ -353,12 +351,84 @@
   box-shadow: 0 0 10px #444;
 }
 
+/* Информация о программах мероприятия */
+
+.inform
+{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 5vh;
+  background-color: blue;
+}
+
+.search-treasures, .forest-adventure
+{
+  max-width: 49%;
+}
+
+.search-treasures-head, .forest-adventure-head
+{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.search-treasures-text, .forest-adventure-text
+{
+  font-size: 1.7em;
+}
+
+.warning
+{
+  color: red;
+  background-color: white;
+  font-size: 1.5em;
+}
+
+/* Информация о программах мероприятия - В поисках сокровищ */
+.search-treasures
+{
+  border: goldenrod solid;
+  border-radius: 10px;
+  box-shadow: 0 0 10px goldenrod;
+}
+
+.search-treasures-head
+{
+  text-transform: uppercase;
+  color: gold;
+}
+
+/* Информация о программах мероприятия - Лесные приключения */
+.forest-adventure
+{
+  border: green solid;
+  border-radius: 10px;
+  box-shadow: 0 0 10px green;
+}
+
+.forest-adventure-head
+{
+  text-transform: uppercase;
+  color: greenyellow;
+}
+
+/* Стоимость и информация о программах */
+.programm
+{
+  height: 100vh;
+}
+
 
 /* Форма не выезжающая */
 #form
 {
   width: 100%;
   height: 40vh;
+  background-color: red;
 }
 
 .inputgroup
