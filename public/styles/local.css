@@ -125,6 +125,41 @@
   }   
 }
 
+/* Превью */
+.preview img
+{
+  height: 100vh;
+  width: 100%;
+  opacity: .55;
+  filter: saturate(300%);
+}
+
+.preview-leo
+{
+  height: 100vh;
+  width: 80%;
+  position: absolute;
+  background-image: url(../pics/logotype.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -95vh;
+  margin-left: 10%;
+}
+
+.preview-text
+{
+  font-size: 5em;
+  color: yellowgreen;
+  text-shadow: 5px 5px 10px #000;
+  -webkit-text-stroke: .5px white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -100vh;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
 /* Кнопка перекидывающая на форму */
 #req
@@ -147,12 +182,19 @@
   background-color: aquamarine;
   width: 100%;
   height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* Описание парка */
 #discription
 {
-  background-color: azure;
+  /* background-color: azure; */
+  background-image: url(../pics/Bez_imeni-1.webp);
+  /* background-repeat: no-repeat;
+  background-size: cover; */
   width: 100%;
   height: 575vh;
 }

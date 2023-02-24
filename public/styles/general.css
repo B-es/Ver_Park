@@ -18,15 +18,14 @@ nav
 
 .center
 {
-    background-color: red;
+    background-color: black;
     height: 400vh;
     width: 100%;
 }
 
-.something
+.preview
 {
     height: 100vh;
-    background-color: blue;
 }
 
 footer
