@@ -192,11 +192,12 @@
 #discription
 {
   /* background-color: azure; */
-  background-image: url(../pics/Bez_imeni-1.webp);
-  /* background-repeat: no-repeat;
-  background-size: cover; */
+  background-image: url(../pics/disc_back.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 575vh;
+  /*height: 575vh;*/
+  height: 465vh;
 }
 
 /* Описание парка - Первая секция */
@@ -207,14 +208,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 25vh;
+  /*padding-top: 25vh;*/
+  padding-top: 40vh;
 }
 
 .first-discription-text
 {
   font-size: 1.5em;
-  margin-left: .5em;
+  margin-left: 7em;
   width: 50%;
+  margin-top: 20vh;
 }
 
 .first-discription-image
@@ -222,10 +225,16 @@
   background-image: url(../pics/discription_image.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
-  width: 50%;
-  margin-right: 1em;
+  background-position: center;
+  /*height: 50vh;*/
+  height: 45vh; /*Я ДОБАВИЛ*/
+  /*width: 50%;*/
+  width: 30%; /*Я ДОБАВИЛ*/
+  /*margin-right: 6em;*/
+  margin-right: 10em; /*Я ДОБАВИЛ*/
+  margin-top: 15vh; /*Я ДОБАВИЛ*/
   border-radius: 10px;
+  border: #ccc solid;
   box-shadow: 0 0 10px #444;
 }
 
@@ -233,6 +242,7 @@
 {
   color: green;
   background-color: white;
+  background: rgba(54, 234, 9, 0); /*Делает фон текста прозрачным*/
 }
 
 /* Описание парка - Вторая секция */
@@ -243,24 +253,33 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  padding-top: 15vh;
 }
 
 .second-discription-text
 {
   font-size: 1.5em;
+  /* margin-right: 4em;
   margin-left: .5em;
-  width: 50%;
+  width: 50%; */
+  margin-right: 10em;
+  margin-left: 2em;
   margin-top: 20vh;
+  width: 50%;
 }
 
 .second-discription-image
 {
-  background-image: url(../pics/second_disc_img.webp);
+  background-image: url(../pics/second_disc_img2.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  /*height: 50vh;
   width: 50%;
-  margin-left: 1em;
+  margin-left: 7em;*/
+  height: 50vh;
+  width: 40%;
+  margin-left: 10em;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -274,13 +293,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+  
+  padding-top: 9vh;
 }
 
 .third-discription-text
 {
   font-size: 1.5em;
-  margin-left: .5em;
-  width: 50%;
+  /* margin-left: 6em;
+  width: 50%; */
+  margin-right: 2em;
+  margin-left: 7em;
   margin-top: 20vh;
 }
 
@@ -289,9 +313,13 @@
   background-image: url(../pics/third_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  background-position: 35% 50%;
+  /* height: 50vh;
   width: 50%;
-  margin-right: 1em;
+  margin-right: 6em; */
+  height: 50vh;
+  width: 40%;
+  margin-right: 10em;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -300,7 +328,7 @@
 /* Описание парка - Четвертая секция */
 .fourth-discription-sec
 {
-  height: 75vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -310,8 +338,12 @@
 .fourth-discription-text
 {
   font-size: 1.5em;
+  /* margin-right: 4em;
   margin-left: .5em;
+  margin-top: 20vh; */
   width: 50%;
+  margin-right: 10em;
+  margin-left: 2em;
   margin-top: 20vh;
 }
 
@@ -320,9 +352,12 @@
   background-image: url(../pics/fourth_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 75vh;
+  /* height: 75vh;
   width: 50%;
-  margin-left: 1em;
+  margin-left: 7em; */
+  height: 50vh;
+  width: 54%;
+  margin-left: 10em;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -331,20 +366,23 @@
 /* Описание парка - Пятая секция */
 .fifth-discription-sec
 {
-  height: 100vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 25vh;
+  /*padding-top: 25vh;*/
 }
 
 .fifth-discription-text
 {
   font-size: 1.5em;
-  margin-left: .5em;
+  /* margin-left: 5em;
   width: 50%;
-  margin-top: 20vh;
+  margin-top: 20vh; */
+  margin-left: 7em;
+  width: 50%;
+  margin-top: 22vh;
 }
 
 .fifth-discription-image
@@ -352,9 +390,12 @@
   background-image: url(../pics/fifth_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 75vh;
+  /* height: 75vh;
   width: 50%;
-  margin-right: 1em;
+  margin-right: 6em; */
+  height: 50vh;
+  width: 31%;
+  margin-right: 10em;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -363,20 +404,25 @@
 /* Описание парка - Шестая секция */
 .sixth-discription-sec
 {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 25vh;
+  /*padding-top: 25vh;*/
 }
 
 .sixth-discription-text
 {
   font-size: 1.5em;
+  /* margin-right: 4em;
   margin-left: .5em;
   width: 50%;
-  margin-top: 20vh;
+  margin-top: 20vh; */
+  margin-right: 10em;
+  margin-left: 2em;
+  width: 50%;
+  margin-top: 13vh;
 }
 
 .sixth-discription-image
@@ -385,9 +431,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  /* height: 100vh;
   width: 50%;
-  margin-left: 1em;
+  margin-left: 7em; */
+  height: 50vh;
+  width: 52%;
+  margin-left: 10em;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -462,8 +511,52 @@
 .programm
 {
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 4em 1em;
 }
 
+.programm-base, .programm-arend, .programm-sport-orient
+{
+  width: 33%;
+}
+
+.programm-base-head, .programm-arend-head, .programm-sport-orient-head
+{
+  text-transform: uppercase;
+}
+
+.lower-text
+{
+  text-transform: lowercase;
+  background: rgba(54, 234, 9, 0);
+  font-size: .8em;
+  color: red;
+}
+
+.programm-base-list li, .programm-arend-list li, .programm-sport-orient-list li
+{
+  color: green;
+}
+
+.programm-base-list li::marker, .programm-arend-list li::marker, .programm-sport-orient-list li::marker
+{
+  font-size: 1.5em;
+}
+
+.programm-base-list span, .programm-arend-list span, .programm-sport-orient-list span
+{
+  color: blue;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Стоимость и информация о программах - Базовая программа */
+
+/* Стоимость и информация о программах - Аренда парка */
+
+/* Стоимость и информация о программах - Спортивное ориентирование*/
 
 /* Форма не выезжающая */
 #form
@@ -516,14 +609,17 @@
 /* Загрузочный экран */
 .Pre-loaded
 {
-  height: 1000vh;
+  height: 1200vh;
   width: 100%;
   padding-top: 50vh;
   background-color: azure;
   text-align: center;
-  position: absolute;
+  position: fixed;
   overflow-y: hidden;
   z-index: 50;
+  background-image: url(../pics/Preloader_img.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .Pre-loaded::-webkit-scrollbar
@@ -663,5 +759,6 @@ span:nth-child(5)
   display: block;
   font: normal 22px/1em "Merriweather Sans", sans-serif;
   text-transform: uppercase;
-  color: #CFF09E;
+  /* color: #CFF09E; */
+  color: #4d6d1e;
 }
