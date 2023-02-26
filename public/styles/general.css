@@ -1,10 +1,3 @@
-/* 
-body
-{
-    background-image: url(https://fikiwiki.com/uploads/posts/2022-02/1645014563_2-fikiwiki-com-p-kartinki-arbuzi-2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
 @font-face {
     font-family: 'AmaticSC Bold';
     src: url(fonts/AmaticSC-Bold.ttf);
@@ -21,9 +14,12 @@ body
 
 nav
 {
-    background-color: green;
+    background-color: yellowgreen;
     height: 10vh;
-    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .center

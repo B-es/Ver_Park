@@ -1,9 +1,35 @@
+/* Навигация */
+.nav-list
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.nav-list li
+{
+  height: 1vh;
+  list-style: none;
+  padding-right: 20px;
+}
+
+.nav-list a
+{
+  background-color: rgba(255, 255, 255, 0);
+}
 
 .bi-list
 {
   cursor: pointer;
-  margin-left: 95%;
+}
+
+.nav-tel
+{
+  width: auto;
+  height: 2vh;
+  font-size: 1.2em;
+  font-weight: lighter;
+  font-family: 'Roboto Regular';
 }
 
 /* ФОРМА ВЫЕЗЖАЮЩАЯ*/
@@ -130,19 +156,18 @@
 /* Превью */
 .preview
 {
-  height: 100vh;
+  height: 125vh;
   display: flex;
   flex-direction: column;
   justify-content:space-around;
-  
   align-items: center;
 }
 
 .preview img
 {
-  height: 100vh;
+  height: 125vh;
   width: 100%;
-  filter: brightness(20%);
+  /* filter: brightness(20%); */
   position: absolute;
 }
 
@@ -181,16 +206,30 @@
   background-size: cover;
 }
 
-/* Кнопка перекидывающая на форму */
+/* Превью - Кнопка перекидывающая на форму */
 #req
 {
   width: 30vw;
-  height: 20vh;
+  height: 15vh;
   text-align: center;
   word-wrap: break-word;
-  transition: linear .3s;
+  transition: linear .5s;
   position: relative;
-  margin-bottom: 5vh;
+  /* background: linear-gradient(90deg, rgba(191,221,108,1) 0%, rgba(121,214,94,1) 50%, rgba(22,138,14,1) 100%); */
+  background-color: #50bd38;
+  color: #FFEB73;
+  font-weight: bold;
+  font-size: 30px;
+  border: #07580c 5px solid;
+  border-radius: 20px;
+  margin-bottom: -15vh;
+  z-index: 1;
+}
+
+#req:hover
+{
+  background: linear-gradient(90deg, rgba(218,230,34,1) 0%, rgba(235,159,44,1) 100%);
+  color: #07580c;
 }
 
 /* Видео парка */
@@ -205,19 +244,45 @@
   justify-content: center;
 }
 
+/* Переход */
+.perehod-sec
+{
+  height: 25vh;
+  background: linear-gradient(90deg, rgba(113,217,90,1) 8%, rgba(220,245,7,1) 48%, rgba(255,179,0,1) 86%);
+}
+
+.perehod
+{
+  position: absolute;
+  margin-top: -10vh;
+  height: 40vh;
+  /* margin-top: -40vh;
+  height: 100vh; */
+  width: 100%;
+}
+
 /* Описание парка */
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url(fonts/RobotoCondensed-LightItalic.ttf);
+}
+
 #discription
 {
-  /* background-color: azure; */
-  background-image: url(../pics/disc_back.webp);
+  background-image: url(../pics/disc_back3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  /*height: 575vh;*/
-  height: 465vh;
+  height: 515vh;
   display: flex;
   flex-direction: column;
-  padding-top: 15%;
+  /* padding-top: 15vh;
+  padding-bottom: 15vh; */
+  padding-top: 30vh;
+  padding-bottom: 200vh;
+  font-family: 'Roboto Condensed';
+  font-weight: bold;
+  
 }
 
 /* Описание парка - Первая секция */
@@ -229,11 +294,9 @@
   justify-items:center;
   align-items: center;
   justify-content:space-around;
-
-  margin-top:10%;
+  margin-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
-  
 }
 
 .first-discription-text
@@ -249,12 +312,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /*height: 50vh;*/
   height: 50vh; /*Я ДОБАВИЛ*/
-  /*width: 50%;*/
   width: 30%; /*Я ДОБАВИЛ*/
-  /*margin-right: 6em;*/
-  /* margin-right: 10em; Я ДОБАВИЛ */
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -277,8 +336,7 @@
   justify-items:center;
   align-items: center;
   justify-content:space-around;
-
-  margin-top:10%;
+  margin-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -295,9 +353,6 @@
   background-image: url(../pics/second_disc_img2.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  /*height: 50vh;
-  width: 50%;
-  margin-left: 7em;*/
   height: 50vh;
   width: 40%;
   border-radius: 10px;
@@ -315,7 +370,7 @@
   align-items: center;
   justify-content:space-around;
 
-  margin-top:10%;
+  margin-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -333,9 +388,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 35% 50%;
-  /* height: 50vh;
-  width: 50%;
-  margin-right: 6em; */
   height: 50vh;
   width: 40%;
   border-radius: 10px;
@@ -353,7 +405,7 @@
   align-items: center;
   justify-content:space-around;
 
-  margin-top:10%;
+  margin-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -370,9 +422,6 @@
   background-image: url(../pics/fourth_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 75vh;
-  width: 50%;
-  margin-left: 7em; */
   height: 50vh;
   width: 40%;
   border-radius: 10px;
@@ -390,7 +439,7 @@
   align-items: center;
   justify-content:space-around;
 
-  margin-top:10%;
+  margin-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -407,9 +456,7 @@
   background-image: url(../pics/fifth_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 75vh;
-  width: 50%;
-  margin-right: 6em; */
+  background-position: center;
   height: 50vh;
   width: 31%;
   border-radius: 10px;
@@ -426,8 +473,8 @@
   justify-items:center;
   align-items: center;
   justify-content:space-around;
-
-  margin-top:10%;
+ 
+  margin-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -445,9 +492,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 100vh;
-  width: 50%;
-  margin-left: 7em; */
   height: 50vh;
   width: 52%;
   border-radius: 10px;
@@ -455,70 +499,7 @@
   box-shadow: 0 0 10px #444;
 }
 
-/* Информация о программах мероприятия */
 
-.inform
-{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding-top: 5vh;
-  background-color: blue;
-}
-
-.search-treasures, .forest-adventure
-{
-  max-width: 49%;
-}
-
-.search-treasures-head, .forest-adventure-head
-{
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.search-treasures-text, .forest-adventure-text
-{
-  font-size: 1.7em;
-}
-
-.warning
-{
-  color: red;
-  background-color: white;
-  font-size: 1.5em;
-}
-
-/* Информация о программах мероприятия - В поисках сокровищ */
-.search-treasures
-{
-  border: goldenrod solid;
-  border-radius: 10px;
-  box-shadow: 0 0 10px goldenrod;
-}
-
-.search-treasures-head
-{
-  text-transform: uppercase;
-  color: gold;
-}
-
-/* Информация о программах мероприятия - Лесные приключения */
-.forest-adventure
-{
-  border: green solid;
-  border-radius: 10px;
-  box-shadow: 0 0 10px green;
-}
-
-.forest-adventure-head
-{
-  text-transform: uppercase;
-  color: greenyellow;
-}
 
 /* Стоимость и информация о программах */
 .programm
@@ -530,7 +511,7 @@
   padding: 4em 1em;
 }
 
-.programm-base, .programm-arend, .programm-sport-orient
+.programm-base, .programm-arend, .programm-sport-orient, .programm-search-treasures, .programm-forest-adventure
 {
   width: 33%;
 }
@@ -563,6 +544,52 @@
   color: blue;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.programm-search-treasures-head, .programm-forest-adventure-head
+{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.programm-search-treasures-text, .programm-forest-adventure-text
+{
+  font-size: 1.2em;
+}
+
+.warning
+{
+  color: red;
+  background-color: white;
+  font-size: 1.5em;
+}
+
+/* Стоимость и информация о программах - В поисках сокровищ */
+.programm-search-treasures
+{
+  border: goldenrod solid;
+  border-radius: 10px;
+  box-shadow: 0 0 10px goldenrod;
+}
+
+.programm-search-treasures-head
+{
+  text-transform: uppercase;
+  color: gold;
+}
+
+/* Стоимость и информация о программах - Лесные приключения */
+.programm-forest-adventure
+{
+  border: green solid;
+  border-radius: 10px;
+  box-shadow: 0 0 10px green;
+}
+
+.programm-forest-adventure-head
+{
+  text-transform: uppercase;
+  color: greenyellow;
 }
 
 /* Стоимость и информация о программах - Базовая программа */
@@ -611,13 +638,56 @@
 }
 
 /* Месторасположение */
+
+@font-face 
+{
+  font-family: 'Roboto Regular';
+  src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+
+.map-sec
+{
+  height: 80vh;
+  width: 100%;
+  font-family: 'Roboto Regular';
+  font-style: italic;
+}
+
+.map-head
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: yellowgreen;
+}
+
 #map
 {
   background-color: black;
-  width: 100%;
+  width: 50%;
   height: 500px;
 }
 
+.map-content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contacts
+{
+  width: 30%;
+}
+
+.adress, .contacts-tel, .work-time
+{
+  text-transform: uppercase;
+}
+
+.adress-text, .contacts-tel-text, .work-time-text
+{
+  font-size: 2.5em;
+}
 
 /* Загрузочный экран */
 .Pre-loaded

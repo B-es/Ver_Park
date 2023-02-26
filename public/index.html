@@ -7,6 +7,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700" rel="stylesheet" type="text/css"/>
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> -->
+
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/media.css">
     <link rel="stylesheet" href="styles/local.css">
@@ -22,6 +27,15 @@
     </div>
 
     <nav>
+        <p class="nav-tel">
+            Тел +7 (995) 418-03-03
+        </p>
+
+        <ul class="nav-list" id="navList">
+            <li><a href="#discription">О НАС</a></li>
+            <li><a href="#programm">УСЛУГИ</a></li>
+        </ul>
+
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" id="hamburger" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
         </svg>
@@ -51,12 +65,16 @@
 
     <div class="center">
         <div class="preview">
-            <img src="pics/second_disc_img.webp">
+            <img class= "preview-img" src="pics/Previev_img.webp">
             <h2 class="preview-text">верёвочный парк<br>
                 <span id="Tan">ТАНЗАНИЯ</span></h2>
             <!-- <section id="logo"></section> -->
             <button class="btn btn-danger" id="req">Рассчитать стоимость</button>
         </div>
+
+        <section class = "perehod-sec">
+            <img class="perehod" src="/public/pics/perehod.webp">
+        </section>
 
         <section id="discription">
 
@@ -98,22 +116,8 @@
 
         </section>
 
-        <section class="inform">
+        <section class="programm" id ="programm">
 
-            <section class="search-treasures">
-                <h1 class="search-treasures-head">В поисках сокровищ</h1>
-                <p class="search-treasures-text"><mark class="warning">На компанию до 10-ти человек</mark></br></br>
-                Увлекательная игра для детей от 8-ми до 14-ти лет на прохождение разных заданий на внимательность, разгадки головоломок, ориентирование по компасу, где после прохождения всех заданий, участники игры найдут тайник, в котором спрятан сундук с сокровищами.</p>
-            </section>
-
-            <section class="forest-adventure">
-                <h1 class="forest-adventure-head">Лесные приключения</h1>
-                <p class="search-treasures-text"><mark class="warning">На компанию до 10-ти человек</mark></br></br>
-                Увлекательные приключения в лесу для детей от 6-ти до 14-ти лет.Активные игры на свежем воздухе. Ребят ждут задания на внимательность, силу и ловкость, интересные головоломки, а также ориентирование на местности, установка палатки.</p>
-            </section>
-        </section>
-
-        <section class="programm">
             <section class="programm-base">
                 <h1 class="programm-base-head">Базовая программа <mark class="lower-text">(минимум 2 часа)</mark>:</h1>
                 <p class="programm-base-text">Для детей от 7-ми до 17-ти лет: </p>
@@ -131,6 +135,18 @@
                     <li><span>Маршруты (безлимит)</span></li>
                     <li><span>Чаепитие в домике</span></li>
                 </ul>
+            </section>
+
+            <section class="programm-search-treasures">
+                <h1 class="programm-search-treasures-head">В поисках сокровищ</h1>
+                <p class="programm-search-treasures-text"><mark class="warning">На компанию до 10-ти человек</mark></br></br>
+                Увлекательная игра для детей от 8-ми до 14-ти лет на прохождение разных заданий на внимательность, разгадки головоломок, ориентирование по компасу, где после прохождения всех заданий, участники игры найдут тайник, в котором спрятан сундук с сокровищами.</p>
+            </section>
+
+            <section class="programm-forest-adventure">
+                <h1 class="programm-forest-adventure-head">Лесные приключения</h1>
+                <p class="programm-forest-adventure-text"><mark class="warning">На компанию до 10-ти человек</mark></br></br>
+                Увлекательные приключения в лесу для детей от 6-ти до 14-ти лет.Активные игры на свежем воздухе. Ребят ждут задания на внимательность, силу и ловкость, интересные головоломки, а также ориентирование на местности, установка палатки.</p>
             </section>
 
             <section class="programm-sport-orient">
@@ -157,9 +173,25 @@
                 </div>
             </form>
         </section>
-        <section id="map">
-            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/38/volgograd/search/%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4%20(%D0%B3%D0%BE%D1%80%D1%81%D0%B0%D0%B4)/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Комсомольский сад (горсад) в Волгограде</a><a href="https://yandex.ru/maps/38/volgograd/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Волгоград</a><iframe src="https://yandex.ru/map-widget/v1/?from=tabbar&ll=44.509396%2C48.709043&mode=search&sctx=ZAAAAAgBEAAaKAoSCQHcLF4sQkZAESkGSDSBWkhAEhIJkUjb%2BBOV4j8RrmNccXFU3j8iBgABAgMEBSgKOABAvc0GSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHsa4RgwgEK%2B%2B3GwVy%2BtZChBuoBAPIBAPgBAIICMNCa0L7QvNGB0L7QvNC%2B0LvRjNGB0LrQuNC5INGB0LDQtCAo0LPQvtGA0YHQsNC0KYoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=44.509396%2C48.709043&source=serp_navig&sspn=0.012456%2C0.005531&text=%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4%20%28%D0%B3%D0%BE%D1%80%D1%81%D0%B0%D0%B4%29&z=17" width="100%" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+        <section class="map-sec" data-aos="fade-up">
+            <h1 class="map-head">Контакты</h1>
+            <section class="map-content">
+                <section id="map">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/38/volgograd/search/%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4%20(%D0%B3%D0%BE%D1%80%D1%81%D0%B0%D0%B4)/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Комсомольский сад (горсад) в Волгограде</a><a href="https://yandex.ru/maps/38/volgograd/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Волгоград</a><iframe src="https://yandex.ru/map-widget/v1/?from=tabbar&ll=44.509396%2C48.709043&mode=search&sctx=ZAAAAAgBEAAaKAoSCQHcLF4sQkZAESkGSDSBWkhAEhIJkUjb%2BBOV4j8RrmNccXFU3j8iBgABAgMEBSgKOABAvc0GSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHsa4RgwgEK%2B%2B3GwVy%2BtZChBuoBAPIBAPgBAIICMNCa0L7QvNGB0L7QvNC%2B0LvRjNGB0LrQuNC5INGB0LDQtCAo0LPQvtGA0YHQsNC0KYoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=44.509396%2C48.709043&source=serp_navig&sspn=0.012456%2C0.005531&text=%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4%20%28%D0%B3%D0%BE%D1%80%D1%81%D0%B0%D0%B4%29&z=17" width="100%" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </section>
+
+                <section class="contacts">
+                    <h4 class="adress">Адрес</h4>
+                    <p class="adress-text">г. Волгоград, <br />Комсомольский сад</p>
+                    <h4 class="contacts-tel">Телефон</h4>
+                    <p class="contacts-tel-text">+7(995)418-03-03</p>
+                    <h4 class="work-time">Время работы</h4>
+                    <p class="work-time-text">c 10:00 до 20:00 <br /> ежедневно</p>
+                </section>
+            </section>
         </section>
+
         <section id="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/o9lkjH8SkZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
