@@ -1,3 +1,5 @@
+
+
 .bi-list
 {
   cursor: pointer;
@@ -126,24 +128,22 @@
 }
 
 /* Превью */
+.preview
+{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  
+  align-items: center;
+}
+
 .preview img
 {
   height: 100vh;
   width: 100%;
-  opacity: .55;
-  filter: saturate(300%);
-}
-
-.preview-leo
-{
-  height: 100vh;
-  width: 80%;
+  filter: brightness(20%);
   position: absolute;
-  background-image: url(../pics/logotype.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: -95vh;
-  margin-left: 10%;
 }
 
 .preview-text
@@ -154,26 +154,43 @@
   -webkit-text-stroke: .5px white;
   text-align: center;
   text-transform: uppercase;
-  margin-top: -100vh;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
+  position: relative;
+  font-family: 'AmaticSC Bold';
+}
+
+#Tan
+{
+  background:linear-gradient(to top right,rgb(0, 180, 75),rgb(0, 160, 0),rgb(52, 248, 52));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2em;
+  font-family: 'AmaticSC Bold';
+  position: relative;
+  color:transparent;
+}
+
+#logo
+{
+  position: absolute;
+  width: 30vw;
+  height: 30vh;
+  top: 0;
+  background-image: url(../pics/logotype.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Кнопка перекидывающая на форму */
 #req
 {
-  left: 50%;
-  transform: translate(-50%, 0);
   width: 30vw;
   height: 20vh;
   text-align: center;
   word-wrap: break-word;
-  margin-top:  15vh;
-  margin-bottom: 15vh;
-  margin-left: 50%;
   transition: linear .3s;
+  position: relative;
+  margin-bottom: 5vh;
 }
 
 /* Видео парка */
@@ -198,6 +215,9 @@
   width: 100%;
   /*height: 575vh;*/
   height: 465vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15%;
 }
 
 /* Описание парка - Первая секция */
@@ -206,18 +226,21 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /*padding-top: 25vh;*/
-  padding-top: 40vh;
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+
+  margin-top:10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  
 }
 
 .first-discription-text
 {
   font-size: 1.5em;
-  margin-left: 7em;
   width: 50%;
-  margin-top: 20vh;
+  height: 45vh;
 }
 
 .first-discription-image
@@ -227,15 +250,15 @@
   background-size: cover;
   background-position: center;
   /*height: 50vh;*/
-  height: 45vh; /*Я ДОБАВИЛ*/
+  height: 50vh; /*Я ДОБАВИЛ*/
   /*width: 50%;*/
   width: 30%; /*Я ДОБАВИЛ*/
   /*margin-right: 6em;*/
-  margin-right: 10em; /*Я ДОБАВИЛ*/
-  margin-top: 15vh; /*Я ДОБАВИЛ*/
+  /* margin-right: 10em; Я ДОБАВИЛ */
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
+  margin-right: 5em;
 }
 
 .important-info
@@ -248,25 +271,23 @@
 /* Описание парка - Вторая секция */
 .second-discription-sec
 {
-  height: 75vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
 
-  padding-top: 15vh;
+  margin-top:10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .second-discription-text
 {
   font-size: 1.5em;
-  /* margin-right: 4em;
-  margin-left: .5em;
-  width: 50%; */
-  margin-right: 10em;
-  margin-left: 2em;
-  margin-top: 20vh;
   width: 50%;
+  height: 45vh;
 }
 
 .second-discription-image
@@ -279,7 +300,6 @@
   margin-left: 7em;*/
   height: 50vh;
   width: 40%;
-  margin-left: 10em;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -288,24 +308,23 @@
 /* Описание парка - Третья секция */
 .third-discription-sec
 {
-  height: 75vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-  
-  padding-top: 9vh;
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+
+  margin-top:10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .third-discription-text
 {
   font-size: 1.5em;
-  /* margin-left: 6em;
-  width: 50%; */
-  margin-right: 2em;
-  margin-left: 7em;
-  margin-top: 20vh;
+  width: 50%;
+  height: 45vh;
 }
 
 .third-discription-image
@@ -319,7 +338,6 @@
   margin-right: 6em; */
   height: 50vh;
   width: 40%;
-  margin-right: 10em;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -328,23 +346,23 @@
 /* Описание парка - Четвертая секция */
 .fourth-discription-sec
 {
-  height: 65vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+
+  margin-top:10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .fourth-discription-text
 {
   font-size: 1.5em;
-  /* margin-right: 4em;
-  margin-left: .5em;
-  margin-top: 20vh; */
   width: 50%;
-  margin-right: 10em;
-  margin-left: 2em;
-  margin-top: 20vh;
+  height: 45vh;
 }
 
 .fourth-discription-image
@@ -356,8 +374,7 @@
   width: 50%;
   margin-left: 7em; */
   height: 50vh;
-  width: 54%;
-  margin-left: 10em;
+  width: 40%;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -366,23 +383,23 @@
 /* Описание парка - Пятая секция */
 .fifth-discription-sec
 {
-  height: 65vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /*padding-top: 25vh;*/
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+
+  margin-top:10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .fifth-discription-text
 {
   font-size: 1.5em;
-  /* margin-left: 5em;
   width: 50%;
-  margin-top: 20vh; */
-  margin-left: 7em;
-  width: 50%;
-  margin-top: 22vh;
+  height: 45vh;
 }
 
 .fifth-discription-image
@@ -395,7 +412,6 @@
   margin-right: 6em; */
   height: 50vh;
   width: 31%;
-  margin-right: 10em;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -404,25 +420,23 @@
 /* Описание парка - Шестая секция */
 .sixth-discription-sec
 {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /*padding-top: 25vh;*/
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+
+  margin-top:10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .sixth-discription-text
 {
   font-size: 1.5em;
-  /* margin-right: 4em;
-  margin-left: .5em;
-  width: 50%;
-  margin-top: 20vh; */
-  margin-right: 10em;
-  margin-left: 2em;
-  width: 50%;
-  margin-top: 13vh;
+  width: 40%;
+  height: 45vh;
 }
 
 .sixth-discription-image
@@ -436,7 +450,6 @@
   margin-left: 7em; */
   height: 50vh;
   width: 52%;
-  margin-left: 10em;
   border-radius: 10px;
   border: #ccc solid;
   box-shadow: 0 0 10px #444;
@@ -602,9 +615,9 @@
 {
   background-color: black;
   width: 100%;
-  height: 60vh;
-  display: block;
+  height: 500px;
 }
+
 
 /* Загрузочный экран */
 .Pre-loaded

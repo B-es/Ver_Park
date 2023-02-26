@@ -5,6 +5,15 @@ body
     background-repeat: no-repeat;
     background-size: contain;
 } */
+@font-face {
+    font-family: 'AmaticSC Bold';
+    src: url(fonts/AmaticSC-Bold.ttf);
+  }
+  
+@font-face {
+    font-family: 'AmaticSC Regular';
+    src: url(fonts/AmaticSC-Regular.ttf);
+} 
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -14,6 +23,7 @@ nav
 {
     background-color: green;
     height: 10vh;
+    
 }
 
 .center
@@ -21,11 +31,6 @@ nav
     background-color: black;
     height: 400vh;
     width: 100%;
-}
-
-.preview
-{
-    height: 100vh;
 }
 
 footer
