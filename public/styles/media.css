@@ -3,10 +3,11 @@
 @media (max-width: 576px) 
 {
     /* Загрузочный экран */
-    .Pre-loaded
+    .Pre-loaded.Pre-loaded
     {
         background-image: url(../pics/mobile_preloader_img.webp);
-        height: 100vh;
+        height: 500vh;
+        background-size: cover;
     }
 
     /* Превью */
