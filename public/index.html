@@ -20,6 +20,22 @@
 </head>
 <body>
 
+    <div id="anketa" style="display:none;">
+        <section id="form">
+            <form method="post" action="/req">
+                <div class="inputgroup">
+                    <span>Оставить заявку</span>
+                    <br>
+                    <!-- Здесь - выбор из четырёх возрастов -->
+                    <!-- Здесь - выбор из 1, 2, 3 часов - продолжительность -->
+                    <!-- Здесь - выбор даты -->
+                    <input placeholder="Почта" name="email">
+                    <button id="send">Отправить</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
     <div class = "Pre-loaded" id = "preloader">
         <div class="quiver"><span class="arrows st"></span><span class="arrows nd"></span><span class="arrows rd"></span><span class="arrows th"></span><span class="arrows fth"></span>
         <span class="loading">Загрузка</span>
@@ -32,36 +48,11 @@
         </p>
 
         <ul class="nav-list" id="navList">
-            <li><a href="#discription">О НАС</a></li>
-            <li><a href="#programm">УСЛУГИ</a></li>
+            <li><a id="navUs">О НАС</a></li>
+            <li><a id="navProg">ПРОГРАММЫ</a></li>
         </ul>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" id="hamburger" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
     </nav>
-
-
-    <!-- ФОРМА -->
-    <div class="Forma" id="forma">
-        
-        <div class="close-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-x" id="closeBtn" viewBox="0 0 16 16">
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-        </svg>
-        </div>
-
-        <h10 class="head-form">Верёвочный Парк</h10>
-        
-        <input type="text" placeholder="Ваше имя" class="name-form"></input>
-        <input type="text" placeholder="Телефон" class="tel-form"></input>
-        <input type="text" placeholder="Email" class="email-form"></input>
-        <div class="comment">
-            <textarea class="text-area-comment" placeholder="Комментарий"></textarea>
-        </div>
-
-        <button class="send-btn">Отправить</button>
-    </div>
 
     <div class="center">
         <div class="preview">
@@ -116,62 +107,51 @@
 
         </section>
 
-        <section class="programm" id ="programm">
+        <section id ="program">
 
-            <section class="programm-base">
-                <h1 class="programm-base-head">Базовая программа <mark class="lower-text">(минимум 2 часа)</mark>:</h1>
-                <p class="programm-base-text">Для детей от 7-ми до 17-ти лет: </p>
-                <ul class="programm-base-list">
-                    <li><span>Прохождение маршрутов на выбор по прайсу (безлимит, минимум 2 часа)</span></li>
-                    <li><span>Посиделки в чайном домике (минимум 2 часа)</span></li>
-                </ul> 
-            </section>
-
-            <section class="programm-arend">
-                <h1 class="programm-arend-head">Аренда парка <mark class="lower-text">(минимум от 3-х часов)</mark>:</h1>
-                <p class="programm-arend-text">Для детей от 7-ми до 17-ти лет: </p>
-                <ul class="programm-arend-list">
-                    <li><span>Игры</span></li>
-                    <li><span>Маршруты (безлимит)</span></li>
-                    <li><span>Чаепитие в домике</span></li>
-                </ul>
-            </section>
-
-            <section class="programm-search-treasures">
-                <h1 class="programm-search-treasures-head">В поисках сокровищ</h1>
-                <p class="programm-search-treasures-text"><mark class="warning">На компанию до 10-ти человек</mark></br></br>
-                Увлекательная игра для детей от 8-ми до 14-ти лет на прохождение разных заданий на внимательность, разгадки головоломок, ориентирование по компасу, где после прохождения всех заданий, участники игры найдут тайник, в котором спрятан сундук с сокровищами.</p>
-            </section>
-
-            <section class="programm-forest-adventure">
-                <h1 class="programm-forest-adventure-head">Лесные приключения</h1>
-                <p class="programm-forest-adventure-text"><mark class="warning">На компанию до 10-ти человек</mark></br></br>
-                Увлекательные приключения в лесу для детей от 6-ти до 14-ти лет.Активные игры на свежем воздухе. Ребят ждут задания на внимательность, силу и ловкость, интересные головоломки, а также ориентирование на местности, установка палатки.</p>
-            </section>
-
-            <section class="programm-sport-orient">
-                <h1 class="programm-sport-orient-head">Спортивное ориентирование <mark class="lower-text">(от 2-х часов)</mark>:</h1>
-                <p class="programm-sport-orient-text">Для взрослых и детей от 14-ти лет: </p>
-                <ul class="programm-sport-orient-list">
-                    <li><span>Спортивные игры на свежем воздухе</span></li>
-                    <li><span>Cпортивное ориентирование (компас, установка палатки, изучение альпинистского снаряжения, вязание узлов и другие веселые и полезные испытания и задания)</span></li>
-                </ul>
-            </section>
-
-        </section>
-
-        <section id="form">
-            <form method="post" action="/req">
-                <div class="inputgroup">
-                    <span>Оставить заявку</span>
+            <section class="program-item">
+                <h2>Базовая программа</h2>
+                <br>
+                <p>На компанию до 10-ти человек</p>
+                <ul>
+                    <li>Безлимитное Прохождение маршрутов на выбор</li>
+                    <li>Аренда домика на дереве</li>
+                    <li>Торжественное поздравление</li>
+                    <li>Инструктор на всю программу</li>
                     <br>
-                    <input placeholder="Имя" name="name">
-                    <input placeholder="Фамилия" name="seminame">
-                    <input placeholder="Телефон" name="number">
-                    <input placeholder="Почта" name="email">
-                    <button id="send">Отправить</button>
-                </div>
-            </form>
+                    <br>
+                </ul>    
+            </section>
+
+            <section class="program-item">
+                <h2>Лесные приключения</h2>
+                <br>
+                <p>На компанию до 10-ти человек</p>
+                <ul>
+                    <li>Игры на выбор</li>
+                    <li>Мастер-класс</li>
+                    <li>Аренда Домика на дереве</li>
+                    <li>Торжественное поздравление</li>
+                    <li>Шар-сюрприз</li>
+                    <li>Инструктор на всю программу</li>
+                </ul>
+            </section>
+
+            <section class="program-item">
+                <h2>В поисках сокровищ</h2>
+                <br>
+                <p>На компанию до 10-ти человек</p>
+                <ul>
+                    <li>Игры на выбор</li>
+                    <li>Мастер-класс</li>
+                    <li>Аренда Домика на дереве</li>
+                    <li>Торжественное поздравление</li>
+                    <li>Шар-сюрприз</li>
+                    <li>Инструктор на всю программу</li>
+                </ul>  
+
+            </section>
+
         </section>
 
         <section class="map-sec" data-aos="fade-up">

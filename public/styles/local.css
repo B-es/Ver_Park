@@ -1,9 +1,63 @@
+#anketa
+{
+  display:flex;
+  position: fixed;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Форма не выезжающая */
+#form
+{
+  width: 80%;
+  height: 40vh;
+  background-color: red;
+}
+
+.inputgroup
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#send
+{
+  width: 11vw;
+  margin: 0 auto;
+  outline: 0;
+  border-radius: 0.5em;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: transparent;
+  text-align: center;
+  transition: linear .3s;
+  color: white;
+}
+
+#send:hover
+{
+  background-color: blueviolet;
+}
+
+#send:active
+{
+  background-color: red;
+}
+
 /* Навигация */
 .nav-list
 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .nav-list li
@@ -18,11 +72,6 @@
   background-color: rgba(255, 255, 255, 0);
 }
 
-.bi-list
-{
-  cursor: pointer;
-}
-
 .nav-tel
 {
   width: auto;
@@ -30,127 +79,6 @@
   font-size: 1.2em;
   font-weight: lighter;
   font-family: 'Roboto Regular';
-}
-
-/* ФОРМА ВЫЕЗЖАЮЩАЯ*/
-.Forma
-{
-  display: none;
-  width: 50%;
-  height: 100vh;
-  z-index: -10;
-  background-color: black;
-  left: auto;
-  top:0;
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  overflow-y: auto;
-}
-
-.bi-x
-{
-  color: gray; 
-  transition: 0.8s; 
-}
-
-.bi-x:hover
-{
-  color: white;
-  cursor: pointer;
-  transition: 0.8s; 
-}
-
-.close-btn
-{
-  display: flex;
-  justify-content: right;
-  margin-right: 1em;
-  margin-top: 1.5em;
-}
-
-.head-form
-{
-  font-size: 2.5em;
-  color: gray;
-}
-
-.name-form
-{
-  margin-left: 1%;
-  margin-top: .5em;
-  background-color: whitesmoke;
-}
-
-.tel-form
-{
-  margin-left: 1%;
-  margin-top: .5em; 
-  background-color: whitesmoke;
-}
-
-.email-form
-{
-  margin-left: 1%;
-  margin-top: .5em; 
-  background-color: whitesmoke;
-}
-
-.comment
-{
-  margin-top: .5em; 
-}
-
-.text-area-comment
-{
-  margin-left: 1%;
-  width: 25em;
-  height: 10em;
-  outline: none;
-  background-color: whitesmoke;
-}
-
-.send-btn
-{
-  border-radius: 20px;
-  background-color: whitesmoke;
-  width: 15em;
-  height: 3em;
-  transition: 0.8s;
-  margin-left: 1em;
-}
-
-.send-btn:hover
-{
-  background-color: blue;
-  transition: 0.8s;
-}
-
-@keyframes move-left 
-{
-  0%
-  {
-    right: -1000px; 
-  } 
-  100%
-  {
-    right: 0px;
-  }   
-}
-
-@keyframes move-right 
-{
-  0%
-  {
-    right: 0px; 
-  } 
-  100%
-  {
-    right: -1100px;
-    display: none;
-    z-index: -10;
-    animation-fill-mode:forwards;
-  }   
 }
 
 /* Превью */
@@ -256,18 +184,15 @@
 }
 
 /* Описание парка */
-@font-face {
-  font-family: 'Roboto Condensed';
-  src: url(fonts/RobotoCondensed-LightItalic.ttf);
-}
 
 #discription
 {
-  background-image: url(../pics/disc_back.webp);
+  background-image: url(../pics/disc_back2.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 560vh;
+  height: 540vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -518,23 +443,75 @@
 }
 
 /* Стоимость и информация о программах */
-.programm
+#program
 {
-  height: 100vh;
+  height: 50vh;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 4em 1em;
+  background-color: #07580c;
 }
 
-.programm-base, .programm-arend, .programm-sport-orient, .programm-search-treasures, .programm-forest-adventure
+.program-item
 {
-  width: 33%;
+  background-color: white;
+  width: 25vw;
+  height: auto; 
+  border: transparent solid 3px;
+
+  border-image: linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(255, 94, 0));
+  -moz-border-image: -moz-linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(255, 94, 0));
+  -webkit-border-image: -webkit-linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(255, 94, 0));
+  border-image-slice: 1;
+
+  font-family: 'Roboto Condensed';
+  color:#00583b;
+  position: relative;
+  transition: color linear .3s;
+  transition: background-color .5s ease;
+  cursor: pointer;
 }
 
-.programm-base-head, .programm-arend-head, .programm-sport-orient-head
+.program-item h2
 {
-  text-transform: uppercase;
+  text-align: center;
+  font-family: 'AmaticSC Bold';
+  text-decoration:underline;
+
+  color: rgb(143, 238, 0);
+}
+
+.program-item p
+{
+  padding: 1rem;
+  text-align: center;
+  text-decoration:underline;
+  
+}
+
+.program-item a
+{
+  width: unset;
+  height: unset;
+}
+
+.program-item ul
+{
+  
+  margin:0;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 10%;
+}
+
+.program-item:hover
+{
+  color:white;
+  background-color: #00583b;
 }
 
 .lower-text
@@ -545,34 +522,6 @@
   color: red;
 }
 
-.programm-base-list li, .programm-arend-list li, .programm-sport-orient-list li
-{
-  color: green;
-}
-
-.programm-base-list li::marker, .programm-arend-list li::marker, .programm-sport-orient-list li::marker
-{
-  font-size: 1.5em;
-}
-
-.programm-base-list span, .programm-arend-list span, .programm-sport-orient-list span
-{
-  color: blue;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.programm-search-treasures-head, .programm-forest-adventure-head
-{
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.programm-search-treasures-text, .programm-forest-adventure-text
-{
-  font-size: 1.2em;
-}
-
 .warning
 {
   color: red;
@@ -580,86 +529,8 @@
   font-size: 1.5em;
 }
 
-/* Стоимость и информация о программах - В поисках сокровищ */
-.programm-search-treasures
-{
-  border: goldenrod solid;
-  border-radius: 10px;
-  box-shadow: 0 0 10px goldenrod;
-}
-
-.programm-search-treasures-head
-{
-  text-transform: uppercase;
-  color: gold;
-}
-
-/* Стоимость и информация о программах - Лесные приключения */
-.programm-forest-adventure
-{
-  border: green solid;
-  border-radius: 10px;
-  box-shadow: 0 0 10px green;
-}
-
-.programm-forest-adventure-head
-{
-  text-transform: uppercase;
-  color: greenyellow;
-}
-
-/* Стоимость и информация о программах - Базовая программа */
-
-/* Стоимость и информация о программах - Аренда парка */
-
-/* Стоимость и информация о программах - Спортивное ориентирование*/
-
-/* Форма не выезжающая */
-#form
-{
-  width: 100%;
-  height: 40vh;
-  background-color: red;
-}
-
-.inputgroup
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#send
-{
-  width: 11vw;
-  margin: 0 auto;
-  outline: 0;
-  border-radius: 0.5em;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
-  background-color: transparent;
-  text-align: center;
-  transition: linear .3s;
-  color: white;
-}
-
-#send:hover
-{
-  background-color: blueviolet;
-}
-
-#send:active
-{
-  background-color: red;
-}
 
 /* Месторасположение */
-
-@font-face 
-{
-  font-family: 'Roboto Regular';
-  src: url(fonts/RobotoCondensed-Regular.ttf);
-}
 
 .map-sec
 {
