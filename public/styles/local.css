@@ -70,6 +70,13 @@
 .nav-list a
 {
   background-color: rgba(255, 255, 255, 0);
+  transition: .5s;
+  color: black;
+}
+
+.nav-list li:hover
+{
+  color: orangered;
 }
 
 .nav-tel
@@ -191,7 +198,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 508vh;
+  /* height: 508vh; */
+  height: 525vh;
+  /* height: 550vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -430,7 +439,7 @@
 
 .sixth-discription-image
 {
-  background-image: url(../pics/sixth_disc_img.webp);
+  background-image: url(../pics/sixth_disc_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -444,13 +453,16 @@
 /* Стоимость и информация о программах */
 #program
 {
-  height: 50vh;
-  width: auto;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 4em 1em;
-  background: linear-gradient(to right top,rgb(76, 255, 76), rgb(255, 189, 66), rgb(243, 120, 120));
+  /* background: linear-gradient(to right top,rgb(76, 255, 76), rgb(255, 189, 66), rgb(243, 120, 120)); */
+  background-image: url(../pics/Program_back2.webp);
+  background-size: 1920px 700px;
+  background-repeat: no-repeat;
 }
 
 .program-item
@@ -468,10 +480,13 @@
   font-family: 'Roboto Condensed';
   font-size: 20px;
   color:#00583b;
-  position: relative;
   transition: color linear .3s;
   transition: background-color .5s ease;
   cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .program-item h2
@@ -502,13 +517,12 @@
 
 .program-item ul
 {
-  
-  margin:0;
-  position: absolute;
+  /* margin:0;
   left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin-top: 10%;
+  margin-right: -50%; */
+  /* transform: translate(-50%, -50%); */
+  /* margin-top: 10%; */
+  margin-top: -5vh;
 }
 
 .program-item:hover
@@ -541,6 +555,7 @@
   width: 100%;
   font-family: 'Roboto Regular';
   font-style: italic;
+  background-image: url(../pics/map_back.webp);
 }
 
 .map-head

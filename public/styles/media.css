@@ -48,181 +48,54 @@
     /* Описание парка */
     #discription#discription
     {
-        height: 750vh;
+        height: 1100vh;
         flex-wrap: wrap;
         flex-direction: column;
         padding-bottom: 0;
     }
 
-    /* Описание парка - Первая секция */
-    .first-discription-sec
+    .discription-sec.discription-sec
     {
         flex-wrap: wrap;
         flex-direction: column-reverse;
-        text-align: center;
+        align-items: center;
+        height: 150vh;
+        min-width: 100%;
     }
 
-    .first-discription-image.first-discription-image
+    .discription-text.discription-text
     {
-        margin-left: auto;
-        margin-right: auto;
-        height: 50vh; /*Я ДОБАВИЛ*/
-        width: 90%; /*Я ДОБАВИЛ*/
-    }
-
-    .first-discription-text.first-discription-text
-    {
-        margin-left: auto;
-        margin-right: auto;
         font-size: 1.5em;
-        width: 100%;
-        height: 45vh;
+        min-width: 100%;
     }
 
-    /* Описание парка - Вторая секция */
+   #second-discripction-sec, #fourth-discripction-sec, #sixth-discripction-sec
+   {
+    flex-direction: column;
+   }
 
-    .second-discription-sec.second-discription-sec
-    {
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 45vh;
-    }
-
-    .second-discription-image.second-discription-image
-    {
-        margin-left: auto;
-        margin-right: auto;
-        height: 50vh; /*Я ДОБАВИЛ*/
-        width: 90%; /*Я ДОБАВИЛ*/
-        background-position: center;
-    }
-
-    .second-discription-text.second-discription-text
-    {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.5em;
-        width: 100%;
-        height: 35vh;
-    }
-
-    /* Описание парка - Третья секция */
-    .third-discription-sec.third-discription-sec
-    {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .third-discription-text.third-discription-text
-    {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.5em;
-        width: 100%;
-        height: 25vh;
-    }
-
-    .third-discription-image.third-discription-image
-    {
-        margin-left: auto;
-        margin-right: auto;
-        height: 50vh; /*Я ДОБАВИЛ*/
-        width: 90%; /*Я ДОБАВИЛ*/
-        background-position: center;
-    }
-
-    /* Описание парка - Четвертая секция */
-    .fourth-discription-sec.fourth-discription-sec
-    {
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .fourth-discription-text.fourth-discription-text
-    {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.5em;
-        width: 100%;
-        height: 20vh;
-    }
-
-    .fourth-discription-image.fourth-discription-image
-    {
-        margin-left: auto;
-        margin-right: auto;
-        height: 50vh; /*Я ДОБАВИЛ*/
-        width: 90%; /*Я ДОБАВИЛ*/
-        background-position: center;
-    }
-
-    /* Описание парка - Пятая секция */
-    .fifth-discription-sec.fifth-discription-sec
-    {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .fifth-discription-text.fifth-discription-text
-    {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.5em;
-        width: 100%;
-        height: 20vh;
-    }
-
-    .fifth-discription-image.fifth-discription-image
-    {
-        margin-left: auto;
-        margin-right: auto;
-        height: 50vh; /*Я ДОБАВИЛ*/
-        width: 90%; /*Я ДОБАВИЛ*/
-        background-position: center;
-    }
-
-    /* Описание парка - Шестая секция */
-    .sixth-discription-sec.sixth-discription-sec
-    {
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .sixth-discription-text.sixth-discription-text
-    {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.5em;
-        width: 100%;
-        height: 25vh;
-    }
-
-    .sixth-discription-image.sixth-discription-image
-    {
-        margin-left: auto;
-        margin-right: auto;
-        height: 50vh; /*Я ДОБАВИЛ*/
-        width: 90%; /*Я ДОБАВИЛ*/
-        background-position: center;
-    }
+   .discription-image-view.discription-image-view
+   {
+    background-position: center;
+    width: 100%;
+   }
 
     /* Стоимость и информация о программах */
-    .programm.programm
+    #program#program
     {
         flex-direction: column;
         flex-wrap: wrap;
-        height: 600vh;
+        align-items: center;
+        height: 180vh;
+        padding: 0 0 0 0;
     }
 
-    .programm-base, .programm-arend, .programm-sport-orient, .programm-search-treasures, .programm-forest-adventure
+    .program-item.program-item
     {
-        min-width: 100%;
-        height: 100vh;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
     }
 
     /* Месторасположение */
