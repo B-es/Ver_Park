@@ -1,0 +1,257 @@
+/* Описание парка */
+
+#discription
+{
+  background-image: url(../pics/disc_back2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 508vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top: 15vh;
+  padding-bottom: 15vh; */
+  padding-top: 85vh;
+  padding-bottom: 200vh;
+  font-family: 'Roboto Condensed';
+  font-weight: bold;
+  
+}
+
+.bor-dis
+{
+  border: 5px solid transparent;
+  border-image: linear-gradient(to top right,rgb(0, 180, 75),rgb(0, 160, 0),rgb(52, 248, 52));
+  -moz-border-image: -moz-linear-gradient(to top right,rgb(0, 180, 75),rgb(0, 160, 0),rgb(52, 248, 52));
+  -webkit-border-image: -webkit-linear-gradient(to top right,rgb(0, 180, 75),rgb(0, 160, 0),rgb(52, 248, 52));
+  border-image-slice: 1;
+}
+
+.discription-sec
+{
+  height: 130vh;
+  width: 100vw;
+  max-width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  margin-top: 10%;
+  padding: 1rem;
+}
+
+.discription-text
+{
+  width: 45%;
+  max-width: 70vw;
+  font-size: 1.5em;
+  margin: 0 0 0 0;
+  background: rgba(192, 173, 3, 0.3);
+  color: white;
+  padding: 1rem;
+  backdrop-filter: blur(3px);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(52, 248, 52));
+  -moz-border-image: -moz-linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(52, 248, 52));
+  -webkit-border-image: -webkit-linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(52, 248, 52));
+  border-image-slice: 1;
+}
+
+.discription-image-view
+{
+  height: 45vh; /*Я ДОБАВИЛ*/
+  width: 50%; /*Я ДОБАВИЛ*/
+  border-radius: 10px;
+  border: #ccc solid;
+  box-shadow: 0 0 10px #444;
+}
+
+.first-discription-image
+{
+  background-image: url(../pics/discription_image.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 40vh; /*Я ДОБАВИЛ
+  width: 50%; /*Я ДОБАВИЛ
+  border-radius: 10px;
+  border: #ccc solid;
+  box-shadow: 0 0 10px #444; */
+}
+
+.important-info
+{
+  /* color: green; */
+  color: orangered;
+  background-color: white;
+  background: rgba(54, 234, 9, 0); /*Делает фон текста прозрачным*/
+}
+
+/* Описание парка - Вторая секция */
+/* .second-discription-sec
+{
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+} */
+
+/* .second-discription-text
+{
+  font-size: 1.5em;
+  width: 50%;
+  height: 45vh;
+} */
+
+.second-discription-image
+{
+  background-image: url(../pics/second_disc_img2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 50vh;
+  width: 50%;
+  border-radius: 10px;
+  border: #ccc solid;
+  box-shadow: 0 0 10px #444; */
+}
+
+/* Описание парка - Третья секция */
+/* .third-discription-sec
+{
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+} */
+
+/* .third-discription-text
+{
+  font-size: 1.5em;
+  width: 50%;
+  height: 45vh;
+} */
+
+.third-discription-image
+{
+  background-image: url(../pics/third_disc_img.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 35% 50%;
+  /* height: 50vh;
+  width: 50%;
+  border-radius: 10px;
+  border: #ccc solid;
+  box-shadow: 0 0 10px #444; */
+}
+
+/* Описание парка - Четвертая секция */
+/* .fourth-discription-sec
+{
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+} */
+
+/* .fourth-discription-text
+{
+  font-size: 1.5em;
+  width: 50%;
+  height: 45vh;
+} */
+
+.fourth-discription-image
+{
+  background-image: url(../pics/fourth_disc_img.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 50vh;
+  width: 50%;
+  border-radius: 10px;
+  border: #ccc solid;
+  box-shadow: 0 0 10px #444; */
+}
+
+/* Описание парка - Пятая секция */
+/* .fifth-discription-sec
+{
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+} */
+
+/* .fifth-discription-text
+{
+  font-size: 1.5em;
+  width: 50%;
+  height: 45vh;
+} */
+
+.fifth-discription-image
+{
+  background-image: url(../pics/fifth_disc_img.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 50vh;
+  width: 31%;
+  border-radius: 10px;
+  border: #ccc solid;
+  box-shadow: 0 0 10px #444; */
+}
+
+/* Описание парка - Шестая секция */
+/* .sixth-discription-sec
+{
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-items:center;
+  align-items: center;
+  justify-content:space-around;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+} */
+
+/* .sixth-discription-text
+{
+  font-size: 1.5em;
+  width: 40%;
+  height: 45vh;
+} */
+
+.sixth-discription-image
+{
+  background-image: url(../pics/sixth_disc_img.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 50vh;
+  width: 5%;
+  border-radius: 10px;
+  border: #ccc solid;
+  box-shadow: 0 0 10px #444; */
+}

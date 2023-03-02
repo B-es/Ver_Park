@@ -1,0 +1,45 @@
+/* Месторасположение */
+
+.map-sec
+{
+  height: 80vh;
+  width: 100%;
+  font-family: 'Roboto Regular';
+  font-style: italic;
+}
+
+.map-head
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: yellowgreen;
+}
+
+#map
+{
+  background-color: black;
+  width: 50%;
+  height: 500px;
+}
+
+.map-content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contacts
+{
+  width: 30%;
+}
+
+.adress, .contacts-tel, .work-time
+{
+  text-transform: uppercase;
+}
+
+.adress-text, .contacts-tel-text, .work-time-text
+{
+  font-size: 2.5em;
+}

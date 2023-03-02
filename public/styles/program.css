@@ -1,0 +1,75 @@
+/* Стоимость и информация о программах */
+#program
+{
+  height: 50vh;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 4em 1em;
+  background: linear-gradient(to right top,rgb(76, 255, 76), rgb(255, 189, 66), rgb(243, 120, 120));
+}
+
+.program-item
+{
+  background-color: white;
+  width: 25vw;
+  height: auto; 
+  border: transparent solid 3px;
+
+  border-image: linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(255, 94, 0));
+  -moz-border-image: -moz-linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(255, 94, 0));
+  -webkit-border-image: -webkit-linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(255, 94, 0));
+  border-image-slice: 1;
+
+  font-family: 'Roboto Condensed';
+  font-size: 20px;
+  color:#00583b;
+  position: relative;
+  transition: color linear .3s;
+  transition: background-color .5s ease;
+  cursor: pointer;
+}
+
+.program-item h2
+{
+  padding-top: 1vh;
+  text-align: center;
+  font-family: 'AmaticSC Bold';
+  text-decoration:underline;
+
+  color: rgb(143, 238, 0);
+}
+
+.program-item p
+{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color:#ff7100;
+  font-weight: 700;
+  
+}
+
+.program-item a
+{
+  width: unset;
+  height: unset;
+}
+
+.program-item ul
+{
+  
+  margin:0;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 10%;
+}
+
+.program-item:hover
+{
+  color:white;
+  background-color: #00583b;
+}
