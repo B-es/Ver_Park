@@ -7,6 +7,9 @@
   font-family: 'Roboto Regular';
   font-style: italic;
   background-image: url(../pics/map_main.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 7vh;
 }
 
 .map-head
@@ -18,9 +21,10 @@
 
 #map
 {
-  background-color: black;
+  background-color: rgb(153, 1, 1);
   width: 50%;
-  height: 500px;
+  height: 60vh;
+  margin: 0;
 }
 
 .map-content

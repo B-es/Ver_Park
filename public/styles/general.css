@@ -61,7 +61,7 @@ a
     height: 50vh;
     text-decoration: none;
     color: white;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 a:hover

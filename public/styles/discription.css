@@ -6,7 +6,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 510vh;
+  /* height: 510vh; */
+  height: 520vh;
   display: flex;
   flex-direction: column;
   align-items: center;
