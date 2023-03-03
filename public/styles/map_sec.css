@@ -6,13 +6,14 @@
   width: 100%;
   font-family: 'Roboto Regular';
   font-style: italic;
+  background-image: url(../pics/map_main.webp);
 }
 
 .map-head
 {
   text-align: center;
   text-transform: uppercase;
-  color: yellowgreen;
+  color:  #3d5c04;
 }
 
 #map
