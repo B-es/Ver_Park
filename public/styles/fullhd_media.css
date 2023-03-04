@@ -1,0 +1,19 @@
+@media (min-width: 1900px) 
+{
+    #discription
+    {
+        height: 512vh;
+    }
+
+    #anketa
+    {
+        height: 80%;
+    }
+
+    #age-child, #count-child, #time-child, #data-child
+    {
+        padding: 3.5em;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}

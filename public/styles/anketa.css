@@ -7,9 +7,8 @@
   align-items: center;
   align-content: center;
   width: 100%;
-  height: 100vh;
+  height: 110%;
   z-index: 200;
-  overflow-y: scroll;
 }
 
 #negr
@@ -26,7 +25,6 @@
 {
   width: 100%;
   height: auto;
-  background-color: red;
 }
 
 /* Форма не выезжающая */
@@ -38,6 +36,7 @@ form
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
 }
 
 #inner_form
@@ -49,24 +48,6 @@ form
 form input
 {
   display: unset;
-}
-
-#anketa::-webkit-scrollbar 
-{ 
-  width: 0; 
-}
-
-/* ie 10+ */
-#anketa
-{ 
-  -ms-overflow-style: none; 
-}
-
-/* фф (свойство больше не работает, других способов тоже нет)*/
-#anketa 
-{ 
-  overflow: -moz-scrollbars-none; 
-  scrollbar-width: none;
 }
 
 #send
@@ -82,17 +63,17 @@ form input
   transition: linear .3s;
   color: white;
   display: block;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 #send:hover
 {
-  background-color: blueviolet;
+  background-color: rgb(168, 139, 196);
 }
 
 #send:active
 {
-  background-color: red;
+  background-color: rgb(20, 168, 0);
 }
 
 #closeBtn
@@ -118,7 +99,7 @@ form input
 
 #age-child, #count-child, #time-child, #data-child
 {
-  padding: 3em;
+  padding: 2em;
 }
 
 form section h2
@@ -136,4 +117,15 @@ form section h2
 {
   font-family: 'AmaticSC Bold';
   font-size: 5em;
+  margin: 0;
+  padding: 0;
+}
+
+#form img
+{
+  height: auto;
+  width: 100%;
+  filter: blur(3px);
+  position: absolute;
+  z-index: -1;
 }
