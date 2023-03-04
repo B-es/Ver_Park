@@ -1,10 +1,23 @@
+@font-face {
+    font-family: 'AmaticSC Bold';
+    src: url(fonts/AmaticSC-Bold.ttf);
+  }
+  
+@font-face {
+    font-family: 'AmaticSC Regular';
+    src: url(fonts/AmaticSC-Regular.ttf);
+} 
 
-body
+@font-face 
 {
-    background-image: url(https://fikiwiki.com/uploads/posts/2022-02/1645014563_2-fikiwiki-com-p-kartinki-arbuzi-2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+  font-family: 'Roboto Regular';
+  src: url(fonts/RobotoCondensed-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(fonts/RobotoCondensed-LightItalic.ttf);
+  }
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -12,15 +25,18 @@ body
 
 nav
 {
-    background-color: green;
+    background-color: yellowgreen;
     height: 10vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .center
 {
-    background-color: red;
+    background-color: black;
     height: 400vh;
-    margin-top: 100vh;
     width: 100%;
 }
 
@@ -45,7 +61,7 @@ a
     height: 50vh;
     text-decoration: none;
     color: white;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 a:hover
@@ -81,12 +97,6 @@ input::placeholder
 {
     color: black;
     opacity: 0.4;
-}
-
-p::after, p::before
-{
-    content: "♥";
-    color: blue;
 }
 
 span

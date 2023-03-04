@@ -1,0 +1,74 @@
+/* Стоимость и информация о программах */
+#program
+{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 4em 1em;
+  background-image: url(../pics/Program_back2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.program-item
+{
+  background: rgba(222,224,221,1);
+  width: 25vw;
+  height: auto; 
+  border: transparent solid 3px;
+  padding: 1rem;
+
+  border-image: linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(255, 94, 0));
+  -moz-border-image: -moz-linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(255, 94, 0));
+  -webkit-border-image: -webkit-linear-gradient(to top right,rgb(175, 214, 3),rgb(223, 164, 1),rgb(255, 94, 0));
+  border-image-slice: 1;
+
+  font-family: 'Roboto Condensed';
+  font-size: 20px;
+  color:#00583b;
+  position: relative;
+  transition: color linear .3s;
+  transition: .5s background ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.program-item h2
+{
+  padding-top: 1vh;
+  text-align: center;
+  font-family: 'AmaticSC Bold';
+  text-decoration:underline;
+  color: rgb(105, 161, 20);
+}
+
+.program-item p
+{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color:#ff7100;
+  font-weight: 700;
+}
+
+.program-item a
+{
+  width: unset;
+  height: unset;
+}
+
+.program-item ul
+{
+  padding-left: 5vw;
+}
+
+.program-item:hover
+{
+  background-position: -24vw;
+  background: unset;
+  background-color: #3d5c04;
+  color: white;
+}
+
