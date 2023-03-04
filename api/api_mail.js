@@ -1,6 +1,7 @@
 const nodemailer = require('nodemailer');
 
-let testEmailAccount = {user: 'vvuozxxd7spvoavn@ethereal.email',
+
+let testEmailAccount = {user: process.env.EMAIL,
                             pass: 'e5KWzZyGh7H3jeEUtT'};
 
 //Функция сборки данных из полей в текст для отправки                            
