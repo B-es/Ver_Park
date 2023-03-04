@@ -23,6 +23,7 @@ function openReq(){
 function closeReq(){
     let anketa = document.getElementById("anketa");
     anketa.style.display = "none";
+    document.querySelector('form').reset();
 }
 
 function disableRadios(){

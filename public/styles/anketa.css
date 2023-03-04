@@ -33,10 +33,17 @@
 form
 {
   height: auto;
-  padding: 3rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#inner_form
+{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 form input

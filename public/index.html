@@ -33,109 +33,108 @@
                 <p style="text-align: center;">Оставить заявку</p>
                     <br>
                 <form method="post" action="/req">
-                        <!-- Здесь - выбор из четырёх возрастов -->
-                        <section id="age-child">
+                    <!-- Здесь - выбор из четырёх возрастов -->
+                    <fieldset id="inner_form">
+                        <fieldset id="age-child">
                             <h2>Какого возраста будут дети на празднике?</h2>
-                            <div class="form-check" >
-                                <input id="age_r1" class="form-check-input" type="radio" name="age_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  2-6 лет
+                            <fieldset class="form-check" >
+                                <input class="form-check-input" type="radio" name="age_r" id="age_r">
+                                <label class="form-check-label" for="age_r">
+                                    2-6 лет
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input id="age_r2" class="form-check-input" type="radio" name="age_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  7-12 лет
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="age_r" id="age_r">
+                                <label class="form-check-label" for="age_r">
+                                    7-12 лет
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input id="age_r3" class="form-check-input" type="radio" name="age_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  13-15 лет
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="age_r" id="age_r">
+                                <label class="form-check-label" for="age_r">
+                                    13-15 лет
                                 </label>
-                            </div>
-                            <input id="other_r" placeholder="Другое"> 
-                         </section>
+                            </fieldset>
+                            <input placeholder="Другое" name="age_r" id="other_r"> 
+                        </fieldset>
                         
                         <!-- Здесь - выбор из кол-ва детей -->
-                        <section id="count-child">
+                        <fieldset id="count-child">
                             <h2>Сколько детей будет на празднике?</h2>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <label class="form-check-label" for="count_r">
                                 Менее 5 человек
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <label class="form-check-label" for="count_r">
                                 6-10 человек
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <label class="form-check-label" for="count_r">
                                 11-20 человек
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <label class="form-check-label" for="count_r">
                                 Более 20 человек
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <label class="form-check-label" for="count_r">
                                 Пока не знаю
                                 </label>
-                            </div>
-                        </section>
-
+                            </fieldset>
+                        </fieldset>
+    
                         <!-- Здесь - выбор из 1, 2, 3 часов - продолжительность -->
-                        <section id="time-child">
+                        <fieldset id="time-child">
                             <h2>Праздник какой продолжительности?</h2>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
+                                <label class="form-check-label" for="time_r">
                                 Менее 5 человек
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
+                                <label class="form-check-label" for="time_r">
                                 1 час
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
+                                <label class="form-check-label" for="time_r">
                                 2 часа
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
+                                <label class="form-check-label" for="time_r">
                                 3 часа
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            </fieldset>
+                            <fieldset class="form-check">
+                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
+                                <label class="form-check-label" for="time_r">
                                 Пока не знаю, нужна ваша консультация
                                 </label>
-                            </div>
-                        </section>
+                            </fieldset>
+                        </fieldset>
                         <!-- Здесь - выбор даты -->
-                        <section id="data-child">
+                        <fieldset id="data-child">
                             <h2>Выбор даты</h2>
-                            <form>
-                                <div class="form-group">
+                            <section class="form-group">
                                 <label for="inputDate">Введите дату:</label>
-                                <input type="date" class="form-control">
-                                </div>
-                            </form>
-                        </section>
+                                <input type="date" class="form-control" name="inputDate">
+                            </section>
+                        </fieldset>
                         <!-- Здесь - выбор программы -->
                         <!-- <h2>Чем бы вы хотели наполнить праздник?</h2>
                         <div class="form-check">
@@ -168,7 +167,7 @@
                                 Оформление шарами
                             </label>
                         </div> -->
-
+    
                         <!-- <h2>Заказывая праздник, что бы вы хотели получить в подарок?</h2>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -182,9 +181,11 @@
                                 Сертификат на 4-х человек на бесплатное прохождение одного маршрута на выбор
                             </label>
                         </div> -->
-                        <button id="send">Отправить</button>
-                        <br>
-                        <br>
+                    </fieldset>
+                    
+                    <button id="send" type="submit" name="submit">Отправить</button>
+                    <br>
+                    <br>
                 </form>
             </section>
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" id="closeBtn" viewBox="0 0 16 16">
