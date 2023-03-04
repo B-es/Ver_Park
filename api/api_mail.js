@@ -1,8 +1,8 @@
 const nodemailer = require('nodemailer');
 
 
-let testEmailAccount = {user: process.env.EMAIL,
-                            pass: 'e5KWzZyGh7H3jeEUtT'};
+let emailAccount = {user: process.env.EMAIL,
+                            pass: process.env.PASSWORD};
 
 //Функция сборки данных из полей в текст для отправки                            
 function compileMessage(data){
@@ -12,8 +12,8 @@ function compileMessage(data){
 async function sendToEmail(email){
     
     let transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
-    port: 587,
+        host: 'smtp.gmail.com',
+    port: 465,
     secure: false,
     auth: {
         user: email.user,
@@ -33,6 +33,6 @@ async function sendToEmail(email){
     console.log(result)
 }
 
-sendToEmail(testEmailAccount).catch(console.error);
+sendToEmail(emailAccount).catch(console.error);
 
 //https://ethereal.email/messages
