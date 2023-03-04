@@ -1,8 +1,10 @@
 const nodemailer = require('nodemailer');
+require('dotenv').config()
 
-
-let emailAccount = {user: process.env.EMAIL,
-                            pass: process.env.PASSWORD};
+let emailAccount = {
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD
+};
 
 //Функция сборки данных из полей в текст для отправки                            
 function compileMessage(data){
@@ -10,11 +12,9 @@ function compileMessage(data){
 }
 
 async function sendToEmail(email){
-    
+    console.log(email)
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-    port: 465,
-    secure: false,
+    service: 'gmail',
     auth: {
         user: email.user,
         pass: email.pass,
