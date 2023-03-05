@@ -10,6 +10,31 @@
         background-size: cover;
     }
 
+    /* Переход */
+    .perehod
+    {
+        height: auto;
+        margin-top: -2em;
+    }
+
+    #perehod-program
+    {
+        height: auto;
+        margin-top: -1.5em;
+    }
+
+    #perehod-routes
+    {
+        height: auto;
+        margin-top: -2em;
+    }
+
+    #perehod-map
+    {
+        height: auto;
+        margin-top: -1em;
+    }
+
     /* Превью */
     .preview
     {
@@ -52,6 +77,8 @@
         flex-wrap: wrap;
         flex-direction: column;
         padding-bottom: 0;
+        background-image: url(../pics/mobile_disc_back.webp);
+        background-size: contain;
     }
 
     .discription-sec
@@ -96,6 +123,17 @@
         height: 50vh;
         display: flex;
         flex-direction: column;
+    }
+
+    /* Маршруты */
+    #routes
+    {
+        height: 30vh;
+    }
+
+    #routes-img
+    {
+        height: 30vh;
     }
 
     /* Месторасположение */
