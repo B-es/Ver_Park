@@ -20,14 +20,25 @@ function hasNumbers(t)
 	return regex.test(t);
 }    
 
-bot.onText(/\/reqs/, (msg, match) => {
+bot.onText(/\/reqs (.+)/, (msg, match) => {
 	
 	const chatId = "1134730803";
 	let ms = match.input;
 	let ms2 = ms.split(' ')[1]
+	let dataReg = /^\d{2}([./-])\d{2}\1\d{4}$/
 
 	if(ms2 === "count"){
 		bot.sendMessage(chatId, reqs.length);
+		return;
+	}
+
+	if(ms2 === "all"){
+		let reqs_str = [];
+		reqs.forEach((req)=>{
+			reqs_str.push(compileMessage(req));
+		})
+		let message = reqs_str.join('\n\n'+('------------------').repeat(4)+'\n\n');
+		bot.sendMessage(chatId, message);
 		return;
 	}
 
@@ -35,10 +46,8 @@ bot.onText(/\/reqs/, (msg, match) => {
 		if(Number(ms2) > reqs.length || Number(ms2) < 1) return;
 		bot.sendMessage(chatId, compileMessage(reqs.at(Number(ms2)-1)));
 	}	
-	else
-		for(let i = 0; i < reqs.length; i++){
-			setTimeout(()=>{bot.sendMessage(chatId, compileMessage(reqs.at(i)))},1000);
-		}
-  });
+
+
+});
 
 module.exports.sendToBot = sendToBot;
