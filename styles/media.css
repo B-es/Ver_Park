@@ -47,7 +47,7 @@
 
     form input
     {
-        width: auto;
+        width: 50%;
     }
 
     #form img
@@ -71,12 +71,19 @@
 
     #nn
     {
-        padding: 0;
+        align-items: start;
+        font-size: .75em;
+        padding: 1rem;
     }
 
     #send
     {
         width: auto;
+    }
+
+    #name, #number
+    {
+        margin-left: 0;
     }
 
     /* Переход */
@@ -102,6 +109,12 @@
     {
         height: auto;
         margin-top: -1em;
+    }
+
+    .form-group input
+    {
+        width: 50%;
+        margin-left: 0;
     }
 
     /* Превью */
