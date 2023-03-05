@@ -10,6 +10,75 @@
         background-size: cover;
     }
 
+    /* Анкета */
+    #anketa
+    {
+        overflow-y: scroll;
+    }
+
+    #anketa p
+    {
+        position: absolute;
+        font-size: 2em;
+        padding-top: 2.5vh;
+        padding-bottom: 1vh;
+    }
+
+    #age-child, #count-child, #time-child, #data-child
+    {
+        padding: 1em;
+    }
+
+    form fieldset h2
+    {
+        font-size: 1.2em;
+    }
+
+    #age-child
+    {
+        padding-top: 10vh;
+    }
+
+    #inner_form
+    {
+        flex-direction: column;
+        padding-top: 1vh;
+    }
+
+    form input
+    {
+        width: auto;
+    }
+
+    #form img
+    {
+        height: 110%;
+        width: 105%;
+        position: fixed;
+    }
+
+    #anketa-sec
+    {
+        width: 100%;
+        height: 102%;
+        position: static;
+    }
+
+    form
+    {
+        padding: 0;
+    }
+
+    #nn
+    {
+        padding: 0;
+    }
+
+    #send
+    {
+        width: auto;
+    }
+
     /* Переход */
     .perehod
     {
