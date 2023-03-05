@@ -30,7 +30,7 @@ app.post("/req", urlencodedParser, (req, res) => {
 
     console.log(request);
 
-    //api_mail.sendToEmail(request).catch(console.error);
+    api_mail.sendToEmail(request).catch(console.error);
     api_tg_bot.sendToBot(request).catch(console.error);
 
     res.redirect("/")
