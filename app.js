@@ -3,6 +3,7 @@ const
     express = require('express'),
     path = require('path'),
     app = express();
+    api_mail = require('./api/api_mail.js');
 
 require('dotenv').config()
 
@@ -14,8 +15,22 @@ const urlencodedParser = express.urlencoded({extended: true});
 
 //Запускаем функцию post с необходимыми параметрами
 app.post("/req", urlencodedParser, (req, res) => {   
-    console.log("Отправка заявки...");
-    console.log([req.body.name, req.body.seminame, req.body.number, req.body.email]);
+    
+    let age_r = (req.body.age_r)[1] === '' ? (req.body.age_r)[0] : req.body.age_r;
+
+    const request = {
+        age_r: age_r,
+        count_r: req.body.count_r,
+        time_r: req.body.time_r,
+        date: req.body.inputDate,
+        name: req.body.name,
+        number: req.body.number
+    };
+
+    console.log(request);
+
+    api_mail.sendToEmail(request);
+
     res.redirect("/")
 });
 

@@ -32,28 +32,32 @@
     <div id="anketa">
         <div id="negr"></div>
         <section style="position:relative; width:90%;">
+            <p>Оставить заявку</p>
             <section id="form">  
                 <img src='pics/Anketa2.webp'>
+<<<<<<< HEAD
                 <p style="text-align: center;">Оставить заявку</p>
+=======
+>>>>>>> BackEND
                 <form method="post" action="/req">
                     <!-- Здесь - выбор из четырёх возрастов -->
                     <fieldset id="inner_form">
                         <fieldset id="age-child">
                             <h2>Какого возраста будут дети на празднике?</h2>
                             <fieldset class="form-check" >
-                                <input class="form-check-input" type="radio" name="age_r" id="age_r">
+                                <input class="form-check-input" type="radio" name="age_r" id="age_r1" value="2-6 лет">
                                 <label class="form-check-label" for="age_r">
                                     2-6 лет
                                 </label>
                             </fieldset>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="age_r" id="age_r">
+                                <input class="form-check-input" type="radio" name="age_r" id="age_r2" value="7-12 лет">
                                 <label class="form-check-label" for="age_r">
                                     7-12 лет
                                 </label>
                             </fieldset>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="age_r" id="age_r">
+                                <input class="form-check-input" type="radio" name="age_r" id="age_r3" value="13-15 лет">
                                 <label class="form-check-label" for="age_r">
                                     13-15 лет
                                 </label>
@@ -65,31 +69,31 @@
                         <fieldset id="count-child">
                             <h2>Сколько детей будет на празднике?</h2>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r1" value="Менее 5 человек">
                                 <label class="form-check-label" for="count_r">
                                 Менее 5 человек
                                 </label>
                             </fieldset>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r2" value="6-10 человек">
                                 <label class="form-check-label" for="count_r">
                                 6-10 человек
                                 </label>
                             </fieldset>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r3" value="11-20 человек">
                                 <label class="form-check-label" for="count_r">
                                 11-20 человек
                                 </label>
                             </fieldset>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r4" value="Более 20 человек">
                                 <label class="form-check-label" for="count_r">
                                 Более 20 человек
                                 </label>
                             </fieldset>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="count_r" id="count_r">
+                                <input class="form-check-input" type="radio" name="count_r" id="count_r5" value="  Пока не знаю">
                                 <label class="form-check-label" for="count_r">
                                 Пока не знаю
                                 </label>
@@ -100,31 +104,25 @@
                         <fieldset id="time-child">
                             <h2>Праздник какой продолжительности?</h2>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
-                                <label class="form-check-label" for="time_r">
-                                Менее 5 человек
-                                </label>
-                            </fieldset>
-                            <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
+                                <input class="form-check-input" type="radio" name="time_r" id="time_r1" value="1 час">
                                 <label class="form-check-label" for="time_r">
                                 1 час
                                 </label>
                             </fieldset>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
+                                <input class="form-check-input" type="radio" name="time_r" id="time_r2" value="2 часа">
                                 <label class="form-check-label" for="time_r">
                                 2 часа
                                 </label>
                             </fieldset>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
+                                <input class="form-check-input" type="radio" name="time_r" id="time_r3" value="3 часа">
                                 <label class="form-check-label" for="time_r">
                                 3 часа
                                 </label>
                             </fieldset>
                             <fieldset class="form-check">
-                                <input class="form-check-input" type="radio" name="time_r" id="time_r">
+                                <input class="form-check-input" type="radio" name="time_r" id="time_r4" value="Пока не знаю, нужна ваша консультация">
                                 <label class="form-check-label" for="time_r">
                                 Пока не знаю, нужна ваша консультация
                                 </label>
@@ -185,9 +183,20 @@
                             </label>
                         </div> -->
                     </fieldset>
+                    <fieldset id="nn">
+                        <label class="form-check-label" for="name"><span>Имя</span></label>
+                        <input placeholder="Имя" name="name" id="name"> 
+                        <label class="form-check-label" for="number"><span>Номер телефона</span></label>
+                        <input placeholder="Номер телефона" name="number" id="number"> 
+                        <button id="send" type="submit" name="submit">Отправить</button>
+                    </fieldset>
                     
+                    
+<<<<<<< HEAD
                     <button id="send" type="submit" name="submit">Отправить</button>
                     <br>
+=======
+>>>>>>> BackEND
                 </form>
                 <br>
             <br>
