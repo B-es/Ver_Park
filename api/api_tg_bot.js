@@ -9,9 +9,9 @@ function compileMessage(data){
 }
 
 async function sendToBot(data){
-	let chaiID = "1134730803";
+	let chatID = process.env.chatID;
 	reqs.push(data);
-	await bot.sendMessage(chaiID, compileMessage(data));
+	await bot.sendMessage(chatID, compileMessage(data));
 }
 
 function hasNumbers(t)
@@ -22,10 +22,9 @@ function hasNumbers(t)
 
 bot.onText(/\/reqs (.+)/, (msg, match) => {
 	
-	const chatId = "1134730803";
+	const chatId = process.env.chatID;
 	let ms = match.input;
 	let ms2 = ms.split(' ')[1]
-	let dataReg = /^\d{2}([./-])\d{2}\1\d{4}$/
 
 	if(ms2 === "count"){
 		bot.sendMessage(chatId, reqs.length);
