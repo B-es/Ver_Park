@@ -13,6 +13,11 @@ function toUs(){
     toBlock(us, "start");
 }
 
+function toContacts(){
+    let con = document.getElementById("toContacts");
+    toBlock(con, "start");
+}
+
 function openReq(){
     let anketa = document.getElementById("anketa");
     anketa.style.display = "flex";
@@ -75,6 +80,7 @@ document.getElementById("closeBtn").onclick = closeReq;
 
 document.getElementById("navProg").onclick = toProgram;
 document.getElementById("navUs").onclick = toUs;
+document.getElementById("navContacts").onclick = toContacts;
 //Загрузочный экран
 
 window.onload = function() 

@@ -64,11 +64,15 @@
   padding-left: 5vw;
 }
 
-.program-item:hover
+@media (min-width: 576px)
 {
-  background-position: -24vw;
-  background: unset;
-  background-color: #3d5c04;
-  color: white;
+  .program-item:hover
+  {
+    background-position: -24vw;
+    background: unset;
+    background-color: #3d5c04;
+    color: white;
+  }
 }
+
 
