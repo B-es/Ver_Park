@@ -92,7 +92,7 @@ input:focus
 {
     border-style:groove;
     border-color: rgb(124, 151, 3);
-    color: rgb(26, 3, 158);
+    color: rgb(250, 133, 0);
     transition: border ease-in-out 0.5s;
     outline: 0;
 }

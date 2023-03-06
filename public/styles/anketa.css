@@ -69,7 +69,7 @@ form input
 
 #send:hover
 {
-  background-color: rgb(168, 139, 196);
+  background-color: rgb(250, 133, 0);
 }
 
 #send:active
@@ -157,4 +157,9 @@ form fieldset h2
   margin: 0;
   padding: 0.1rem;
   color: black;
+}
+
+#inputDate
+{
+  color: rgb(0, 180, 75);
 }
