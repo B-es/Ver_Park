@@ -1,4 +1,4 @@
-
+let isSend = false;
 
 function toBlock(block, where="center"){
     let options = {block: where, inline: "center", behavior: "smooth"};
@@ -87,7 +87,10 @@ window.onload = function()
         document.getElementById('preloader').style.display = "none";
     }, 400);
 
-    
+    if(isSend)
+    {
+        openAlert();
+    }
 };
 
 function closeAlert()
@@ -98,12 +101,13 @@ function closeAlert()
 function openAlert()
 {
     document.querySelector(".alert-parent").style.display = "flex";
-    
+   
     setTimeout(function() 
     {
         document.querySelector(".alert-parent").style.display = "none";
     }, 2000);
 }
+
 
 let closeButton = document.querySelector(".btn-close");
 
@@ -111,4 +115,4 @@ closeButton.onclick = closeAlert;
 
 let sendBtn = document.getElementById("send");
 
-sendBtn.onclick = openAlert;
+sendBtn.onclick = function (){isSend = true;};
