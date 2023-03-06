@@ -1,7 +1,9 @@
 require('dotenv').config();
 const TGBot = require('node-telegram-bot-api');
-const bot = new TGBot(process.env.TOKEN, {polling: true});
+const bot = new TGBot(process.env.TOKEN);
+bot.getUpdates();
 let reqs = [];
+console.log("Ну и прикол")
 
 function compileMessage(data){
     return `Заявка\n\nИмя - ${data.name}\nНомер - ${data.number}\nДата - ${data.date}\n\nВозраст - ${data.age_r}\nКоличество - ${data.count_r}\n`+
@@ -37,7 +39,7 @@ bot.onText(/\/reqs (.+)/, (msg, match) => {
 		return;
 	}
 
-	if(ms2 === "all"){
+	if(ms2 === "all" && reqs.length > 0){
 		let reqs_str = [];
 		reqs.forEach((req)=>{
 			reqs_str.push(compileMessage(req));
@@ -54,5 +56,9 @@ bot.onText(/\/reqs (.+)/, (msg, match) => {
 
 
 });
+
+bot.startPolling({clean:false, verbose:false});
+console.log(bot.isPolling());
+
 
 module.exports.sendToBot = sendToBot;
