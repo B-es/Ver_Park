@@ -1,4 +1,10 @@
-
+function isMobile(){
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
+    .test(navigator.userAgent)) {
+        return true;
+    } 
+    else return false;
+}
 
 function toBlock(block, where="center"){
     let options = {block: where, inline: "center", behavior: "smooth"};
@@ -7,12 +13,18 @@ function toBlock(block, where="center"){
 
 function toProgram(){
     let prog = document.getElementById("program");
-    toBlock(prog);
+    if(isMobile()) toBlock(prog, "start");
+    else toBlock(prog);
 }
 
 function toUs(){
     let us = document.getElementById("toDiscription");
     toBlock(us, "start");
+}
+
+function toContacts(){
+    let con = document.getElementById("toContacts");
+    toBlock(con, "start");
 }
 
 function openReq(){
@@ -72,12 +84,12 @@ radios.forEach((r)=>{
     r.onclick = () => {other_r.value = "";}
 });
 
-
 document.getElementById("req").onclick = openReq;
 document.getElementById("closeBtn").onclick = closeReq;
 
 document.getElementById("navProg").onclick = toProgram;
 document.getElementById("navUs").onclick = toUs;
+document.getElementById("navContacts").onclick = toContacts;
 //Загрузочный экран
 
 window.onload = function() 
@@ -88,5 +100,34 @@ window.onload = function()
         document.getElementById('preloader').style.display = "none";
     }, 400);
 
-    
+    if(sessionStorage.getItem("IsSend") === "True")
+    {
+        openAlert();
+        sessionStorage.setItem("IsSend", "False")
+    }
+
 };
+
+function closeAlert()
+{
+    document.querySelector(".alert-parent").style.display = "none";
+}
+
+function openAlert()
+{
+    document.querySelector(".alert-parent").style.display = "flex";
+   
+    setTimeout(function() 
+    {
+        document.querySelector(".alert-parent").style.display = "none";
+    }, 2000);
+}
+
+
+let closeButton = document.querySelector(".btn-close");
+
+closeButton.onclick = closeAlert;
+
+let sendBtn = document.getElementById("send");
+
+sendBtn.onclick = () => sessionStorage.setItem("IsSend", "True");

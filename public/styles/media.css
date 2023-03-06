@@ -9,12 +9,181 @@
         height: 500vh;
         background-size: cover;
     }
+    
+    /* Навигация */
+
+    nav
+    {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list
+    {
+        justify-content: space-between;
+        width: 100%;
+        height: 8vh;
+    }
+
+    .nav-list a
+    {
+        font-size: .99em;
+    }
+
+    /* Анкета */
+    #anketa
+    {
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+    #anketa p
+    {
+        position: absolute;
+        font-size: 2em;
+        padding-top: 2.5vh;
+        padding-bottom: 1vh;
+    }
+
+    #negr
+    {
+        height: 100%;
+    }
+
+    #age-child, #count-child, #time-child, #data-child
+    {
+        padding: 1em;
+    }
+
+    form fieldset h2
+    {
+        font-size: 1.2em;
+    }
+
+    #age-child
+    {
+        padding-top: 10vh;
+    }
+
+    #inner_form
+    {
+        flex-direction: column;
+        padding-top: 1vh;
+    }
+
+    #form img
+    {
+        height: 100%;
+        width: 105%;
+        position: fixed;
+        filter: blur(1px);
+    }
+
+    #form
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #anketa-sec
+    {
+        width: 100%;
+        height: 100%;
+        position: static;
+    }
+
+    form
+    {
+        padding: 0;
+    }
+
+    #nn
+    {
+        font-family: unset;
+        align-items: start;
+        font-size: 1em;
+        padding: 1rem;
+    }
+
+    #nn h2
+    {
+        padding-left: 0;
+        font-size: 1.1em;
+    }
+
+    form fieldset input
+    {
+        font-family: 'Roboto Condensed';
+        width: 100%;
+        font-size: 1rem;
+        
+    }
+
+    #data-child
+    {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+    }
+
+    .form-group input
+    {
+        text-align: center;
+        width: 50%;
+    }
+    
+    #send
+    {
+        padding: 1rem;
+        width: 60%;
+        height: 40%;
+        text-align: center;
+        bottom: 0;
+    }
+
+    #name, #number
+    {
+        margin-left: 0;
+    }
+
+    .form-check
+    {
+        font-family: 'Roboto Condensed';
+    }
+
+    /* Переход */
+    .perehod
+    {
+        height: auto;
+        margin-top: -2em;
+    }
+
+    #perehod-program
+    {
+        height: auto;
+        margin-top: -1.5em;
+    }
+
+    #perehod-routes
+    {
+        height: auto;
+        margin-top: -2em;
+    }
+
+    #perehod-map
+    {
+        height: auto;
+        margin-top: -1em;
+    }
 
     /* Превью */
     .preview
     {
         height: 100vh;
-        background-image: url(../pics/---.webp);
+        background-image: url(../pics/mobile_previev_img.webp);
         background-size: 100% 100vh;
         background-repeat: no-repeat;
     }
@@ -48,9 +217,13 @@
     /* Описание парка */
     #discription
     {
-        height: 1100vh;
+        height: auto;
         flex-wrap: wrap;
         flex-direction: column;
+        padding-bottom: 0;
+        background-image: url(../pics/mobile_disc_back.webp);
+        background-size: cover;
+        padding-top: 30vh;
         padding-bottom: 0;
     }
 
@@ -59,26 +232,41 @@
         flex-wrap: wrap;
         flex-direction: column-reverse;
         align-items: center;
-        height: 150vh;
+        /* height: 160vh; */
+        height: auto;
         min-width: 100%;
+        margin-top: 5%;
     }
 
     .discription-text
     {
         font-size: 1.5em;
         min-width: 100%;
+        margin-top: 1em;
     }
 
    #second-discripction-sec, #fourth-discripction-sec, #sixth-discripction-sec
-   {
-    flex-direction: column;
-   }
+    {
+        flex-direction: column;
+    }
 
    .discription-image-view
-   {
-    background-position: center;
-    width: 100%;
-   }
+    {
+        background-position: center;
+        width: 100%;
+        /* border-radius: 0; */
+    }
+
+    #end_dis
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .second-discription-image, .third-discription-image, .fourth-discription-image
+    {
+        background-position: center;
+    }
 
     /* Стоимость и информация о программах */
     #program
@@ -86,8 +274,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        height: 180vh;
-        padding: 0 0 0 0;
+        row-gap: 2vh;
     }
 
     .program-item
@@ -98,10 +285,25 @@
         flex-direction: column;
     }
 
+    /* Маршруты */
+    #routes
+    {
+        height: 30vh;
+    }
+
+    #routes-img
+    {
+        height: 30vh;
+    }
+
     /* Месторасположение */
     .map-sec
     {
-        height: 150vh;
+        height: auto;
+        background-image: url(../pics/mobile_map_main.webp);
+        background-position: right;
+        background-size: 100% 100%;
+
     }
 
     .map-content

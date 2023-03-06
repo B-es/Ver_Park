@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   padding: 4em 1em;
-  background-image: url(../pics/Program_back2.webp);
+  background-image: url(../pics/Program_back.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -64,11 +64,15 @@
   padding-left: 5vw;
 }
 
-.program-item:hover
+@media (min-width: 576px)
 {
-  background-position: -24vw;
-  background: unset;
-  background-color: #3d5c04;
-  color: white;
+  .program-item:hover
+  {
+    background-position: -24vw;
+    background: unset;
+    background-color: #3d5c04;
+    color: white;
+  }
 }
+
 

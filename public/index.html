@@ -24,17 +24,24 @@
     <link rel="stylesheet" href="styles/media.css">
     <link rel="stylesheet" href="styles/fullhd_media.css">
 
-    <link rel="icon" href="pics/logotype.png">
-    <title>Танзания</title>
+    <link rel="icon" href="pics/logotype.png" style="width: auto; height: auto;">
+    <title>Верёвочный парк "Танзания"</title>
 </head>
 <body>
+    
+    <div class="alert-parent">
+        <div class="alert alert-primary alert-success" role="alert" id="liveAlert">
+            <strong>Отлично!</strong> Вы успешно оправили заявку.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
 
     <div id="anketa">
         <div id="negr"></div>
-        <section style="position:relative; width:90%;">
+        <section id = "anketa-sec">
             <p>Оставить заявку</p>
             <section id="form">  
-                <img src='pics/Anketa2.webp'>
+                <img src='pics/Anketa.webp'>
                 <form method="post" action="/req">
                     <!-- Здесь - выбор из четырёх возрастов -->
                     <fieldset id="inner_form">
@@ -128,7 +135,7 @@
                         <fieldset id="data-child">
                             <h2>Выбор даты</h2>
                             <section class="form-group">
-                                <label for="inputDate">Введите дату:</label>
+                                <label for="inputDate">Введите дату проведения мероприятия:</label>
                                 <input type="date" class="form-control" name="inputDate">
                             </section>
                         </fieldset>
@@ -179,17 +186,18 @@
                             </label>
                         </div> -->
                     </fieldset>
-                    <fieldset id="nn">
-                        <label class="form-check-label" for="name"><span>Имя</span></label>
+                    <fieldset id="nn" class="form-check">
+                        <label for="name"><h2>Имя</h2></label>
                         <input placeholder="Имя" name="name" id="name"> 
-                        <label class="form-check-label" for="number"><span>Номер телефона</span></label>
+                        <label for="number"><h2>Номер телефона</h2></label>
                         <input placeholder="Номер телефона" name="number" id="number"> 
-                        <button id="send" type="submit" name="submit">Отправить</button>
                     </fieldset>
-                    
-                    
+                    <button id="send" type="submit" name="submit">Отправить</button>
                 </form>
+                <br>
+            <br>
             </section>
+            
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" id="closeBtn" viewBox="0 0 16 16">
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
             </svg>
@@ -212,19 +220,19 @@
         <ul class="nav-list" id="navList">
             <li><a id="navUs">О НАС</a></li>
             <li><a id="navProg">ПРОГРАММЫ</a></li>
+            <li><a id="navContacts">КОНТАКТЫ</a></li>
         </ul>
     </nav>
 
     <div class="center">
         <div class="preview">
-            <img class= "preview-img" src="pics/Previev_img(1.0).webp">
+            <img class= "preview-img" src="pics/Previev_img.webp">
             <h2 class="preview-text">верёвочный парк<br>
                 <span id="Tan">ТАНЗАНИЯ</span></h2>
-            <!-- <section id="logo"></section> -->
             <button class="btn btn-danger" id="req">Оставить заявку</button>
         </div>
 
-        <img class="perehod" src="pics/Test-perehod.webp">
+        <img class="perehod" src="pics/perehod.webp">
 
         <section id="discription">
 
@@ -265,12 +273,13 @@
                     Только в нашем парке воплощается мечта из детства - <mark class="important-info"><b><strong>Домик на дереве!!!</strong></b></mark><br><br>
                 </p>
             </section>
+
             <section id="end_dis">
-                <p>В нашем парке можно не только покорить вершины, но и<mark class="important-info"><b><strong>поиграть в интересные игры на свежем воздухе, провести день рождения, корпоратив и другие мероприятия.</strong></b></mark></p>
+                <p data-aos="fade-up">В нашем парке можно не только покорить вершины, но и<mark class="important-info"><b><strong>поиграть в интересные игры на свежем воздухе, провести день рождения, корпоратив и другие мероприятия.</strong></b></mark></p>
             </section>
         </section>
 
-        <img class="perehod" src="pics/Test-perehod.webp" id="perehod-program">
+        <img class="perehod" src="pics/perehod.webp" id="perehod-program">
 
         <section id ="program" data-aos="fade-up" data-aos-duration="1000">
 
@@ -316,15 +325,15 @@
 
         </section>
 
-        <img class="perehod" src="pics/Test-perehod.webp" id="perehod-routes">
+        <img class="perehod" src="pics/perehod.webp" id="perehod-routes">
 
         <section id ="routes">
             <img src="pics/routers.webp" alt="" id="routes-img">
         </section>
 
-        <img class="perehod" src="pics/Test-perehod.webp" id="perehod-map">
+        <img class="perehod" src="pics/perehod.webp" id="perehod-map">
 
-        <section class="map-sec">
+        <section class="map-sec" id="toContacts">
             <h1 class="map-head" data-aos="fade-up">Контакты</h1>
             <section class="map-content" data-aos="fade-up">
                 <section id="map">

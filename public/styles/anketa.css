@@ -36,6 +36,7 @@ form
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
 }
 
 #inner_form
@@ -102,9 +103,9 @@ form input
   padding: 2em;
 }
 
-form section h2
+form fieldset h2
 {
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 600;
 }
 
@@ -113,11 +114,17 @@ form section h2
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#anketa-sec
+{
+  position:relative; 
+  width:90%;
+}
+
 #anketa p
 {
   position: relative;
   font-family: 'AmaticSC Bold';
-  font-size: 5em;
+  font-size: 3em;
   text-align: center;
   width: 5em;
   height: 1vh;
@@ -144,10 +151,10 @@ form section h2
   padding-top: 0;
 }
 
-#nn span
+#nn h2
 {
   position: relative;
   margin: 0;
-  padding: auto;
-  font-size: 2em;
+  padding: 0.1rem;
+  color: black;
 }

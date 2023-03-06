@@ -1,13 +1,18 @@
-@media (min-width: 1900px) 
+@media (min-width: 1800px) 
 {
     #discription
     {
-        height: 512vh;
+        height: 516vh;
     }
 
     #anketa
     {
-        height: 80%;
+        height: 90%;
+    }
+
+    #anketa p
+    {
+        font-size: 5em;
     }
 
     #age-child, #count-child, #time-child, #data-child
@@ -15,5 +20,27 @@
         padding: 3.5em;
         padding-right: 1.5rem;
         padding-left: 1.5rem;
+    }
+
+    #nn
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    #nn span
+    {
+        position: relative;
+        margin: 0;
+        padding: auto;
+        font-size: 2em;
+    }
+
+    form fieldset h2
+    {
+        font-size: 1.5em;
     }
 }

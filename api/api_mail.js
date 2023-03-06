@@ -33,6 +33,3 @@ async function sendToEmail(data){
 }
 
 module.exports.sendToEmail = sendToEmail;
-
-
-//https://ethereal.email/messages
