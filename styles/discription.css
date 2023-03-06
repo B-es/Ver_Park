@@ -2,7 +2,7 @@
 
 #discription
 {
-  background-image: url(../pics/disc_back2.webp);
+  background-image: url(../pics/disc_back.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -49,7 +49,7 @@
   font-size: 1.5em;
   margin: 0 0 0 0;
   background: rgba(192, 173, 3, 0.3);
-  color: white;
+  color: antiquewhite;
   padding: 1rem;
   backdrop-filter: blur(3px);
   border: 2px solid transparent;
@@ -70,7 +70,7 @@
 
 .first-discription-image
 {
-  background-image: url(../pics/discription_image.webp);
+  background-image: url(../pics/first_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -112,7 +112,7 @@
 
 .second-discription-image
 {
-  background-image: url(../pics/second_disc_img2.webp);
+  background-image: url(../pics/second_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 50vh;
@@ -145,7 +145,7 @@
 
 .third-discription-image
 {
-  background-image: url(../pics/fifth_disc_img.webp);
+  background-image: url(../pics/third_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 35% 50%;
@@ -212,7 +212,7 @@
 
 .fifth-discription-image
 {
-  background-image: url(../pics/fifth_disc_img1.jpg);
+  background-image: url(../pics/fifth_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -246,7 +246,7 @@
 
 .sixth-discription-image
 {
-  background-image: url(../pics/sixth_disc_img.jpg);
+  background-image: url(../pics/sixth_disc_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

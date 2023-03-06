@@ -2,7 +2,8 @@ function isMobile(){
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
     .test(navigator.userAgent)) {
         return true;
-    } else return false;
+    } 
+    else return false;
 }
 
 function toBlock(block, where="center"){
@@ -12,9 +13,8 @@ function toBlock(block, where="center"){
 
 function toProgram(){
     let prog = document.getElementById("program");
-    if(isMobile) toBlock(prog, "start");
+    if(isMobile()) toBlock(prog, "start");
     else toBlock(prog);
-    
 }
 
 function toUs(){

@@ -100,20 +100,21 @@
 
     #nn
     {
+        font-family: unset;
         align-items: start;
-        font-size: .75em;
+        font-size: 1em;
         padding: 1rem;
     }
 
-    #nn span
+    #nn h2
     {
-        font-size: 1.5em;
-        font-weight: 500;
+        padding-left: 0;
+        font-size: 1.1em;
     }
 
     form fieldset input
     {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Roboto Condensed';
         width: 100%;
         font-size: 1rem;
         
@@ -148,6 +149,11 @@
         margin-left: 0;
     }
 
+    .form-check
+    {
+        font-family: 'Roboto Condensed';
+    }
+
     /* Переход */
     .perehod
     {
@@ -177,7 +183,7 @@
     .preview
     {
         height: 100vh;
-        background-image: url(../pics/---.webp);
+        background-image: url(../pics/mobile_previev_img.webp);
         background-size: 100% 100vh;
         background-repeat: no-repeat;
     }
@@ -215,7 +221,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         padding-bottom: 0;
-        background-image: url(../pics/mobile2Test.webp);
+        background-image: url(../pics/mobile_disc_back.webp);
         background-size: cover;
         padding-top: 30vh;
         padding-bottom: 0;
@@ -294,6 +300,10 @@
     .map-sec
     {
         height: auto;
+        background-image: url(../pics/mobile_map_main.webp);
+        background-position: right;
+        background-size: 100% 100%;
+
     }
 
     .map-content

@@ -41,17 +41,6 @@
   color:transparent;
 }
 
-#logo
-{
-  position: absolute;
-  width: 30vw;
-  height: 30vh;
-  top: 0;
-  background-image: url(../pics/logotype.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* Превью - Кнопка перекидывающая на форму */
 #req
 {

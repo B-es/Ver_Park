@@ -38,4 +38,9 @@
         padding: auto;
         font-size: 2em;
     }
+
+    form fieldset h2
+    {
+        font-size: 1.5em;
+    }
 }
