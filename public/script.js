@@ -72,7 +72,6 @@ radios.forEach((r)=>{
     r.onclick = () => {other_r.value = "";}
 });
 
-
 document.getElementById("req").onclick = openReq;
 document.getElementById("closeBtn").onclick = closeReq;
 
@@ -90,3 +89,26 @@ window.onload = function()
 
     
 };
+
+function closeAlert()
+{
+    document.querySelector(".alert-parent").style.display = "none";
+}
+
+function openAlert()
+{
+    document.querySelector(".alert-parent").style.display = "flex";
+    
+    setTimeout(function() 
+    {
+        document.querySelector(".alert-parent").style.display = "none";
+    }, 2000);
+}
+
+let closeButton = document.querySelector(".btn-close");
+
+closeButton.onclick = closeAlert;
+
+let sendBtn = document.getElementById("send");
+
+sendBtn.onclick = openAlert;

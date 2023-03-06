@@ -40,6 +40,20 @@ nav
     width: 100%;
 }
 
+.alert-parent
+{
+    position: absolute;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    z-index: 300;
+}
+
+.alert
+{
+    width: auto;
+}
+
 footer
 {
     background-color: gold;
