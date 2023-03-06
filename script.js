@@ -1,3 +1,10 @@
+function isMobile(){
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
+    .test(navigator.userAgent)) {
+        return true;
+    } else return false;
+}
+
 function toBlock(block, where="center"){
     let options = {block: where, inline: "center", behavior: "smooth"};
     block.scrollIntoView(options);
@@ -5,7 +12,9 @@ function toBlock(block, where="center"){
 
 function toProgram(){
     let prog = document.getElementById("program");
-    toBlock(prog);
+    if(isMobile) toBlock(prog, "start");
+    else toBlock(prog);
+    
 }
 
 function toUs(){

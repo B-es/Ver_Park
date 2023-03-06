@@ -125,12 +125,13 @@
         text-align: center;
         flex-direction: column;
         align-content: center;
+        width: 100%;
     }
 
     .form-group input
     {
         text-align: center;
-        width: auto;
+        width: 50%;
     }
     
     #send
@@ -210,12 +211,12 @@
     /* Описание парка */
     #discription
     {
-        height: 1100vh;
+        height: auto;
         flex-wrap: wrap;
         flex-direction: column;
         padding-bottom: 0;
         background-image: url(../pics/mobile2Test.webp);
-        background-size: contain;
+        background-size: cover;
         padding-top: 30vh;
         padding-bottom: 0;
     }
@@ -225,14 +226,17 @@
         flex-wrap: wrap;
         flex-direction: column-reverse;
         align-items: center;
-        height: 160vh;
+        /* height: 160vh; */
+        height: auto;
         min-width: 100%;
+        margin-top: 5%;
     }
 
     .discription-text
     {
         font-size: 1.5em;
         min-width: 100%;
+        margin-top: 1em;
     }
 
    #second-discripction-sec, #fourth-discripction-sec, #sixth-discripction-sec
@@ -244,6 +248,7 @@
     {
         background-position: center;
         width: 100%;
+        /* border-radius: 0; */
     }
 
     #end_dis
@@ -252,14 +257,18 @@
         height: auto;
     }
 
+    .second-discription-image, .third-discription-image, .fourth-discription-image
+    {
+        background-position: center;
+    }
+
     /* Стоимость и информация о программах */
     #program
     {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        height: 180vh;
-        padding: 0 0 0 0;
+        row-gap: 2vh;
     }
 
     .program-item
