@@ -1,8 +1,7 @@
 require('dotenv').config();
 const TGBot = require('node-telegram-bot-api');
-let bot;
-if(bot === undefined)
-   bot = new TGBot(process.env.TOKEN);
+
+const bot = new TGBot(process.env.TOKEN);
 let reqs = [];
 
 function compileMessage(data){
