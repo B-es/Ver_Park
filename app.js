@@ -29,7 +29,7 @@ app.post("/req", urlencodedParser, (req, res) => {
 
     console.log(request);
 
-    api_mail.sendToEmail(request);
+    //api_mail.sendToEmail(request);
 
     res.redirect("/")
 });

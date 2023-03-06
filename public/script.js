@@ -1,5 +1,3 @@
-let isSend = false;
-
 function toBlock(block, where="center"){
     let options = {block: where, inline: "center", behavior: "smooth"};
     block.scrollIntoView(options);
@@ -87,10 +85,12 @@ window.onload = function()
         document.getElementById('preloader').style.display = "none";
     }, 400);
 
-    if(isSend)
+    if(sessionStorage.getItem("IsSend") === "True")
     {
         openAlert();
+        sessionStorage.setItem("IsSend", "False")
     }
+
 };
 
 function closeAlert()
@@ -115,4 +115,4 @@ closeButton.onclick = closeAlert;
 
 let sendBtn = document.getElementById("send");
 
-sendBtn.onclick = function (){isSend = true;};
+sendBtn.onclick = () => sessionStorage.setItem("IsSend", "True");
