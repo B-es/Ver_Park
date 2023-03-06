@@ -1,5 +1,3 @@
-
-
 function toBlock(block, where="center"){
     let options = {block: where, inline: "center", behavior: "smooth"};
     block.scrollIntoView(options);
@@ -72,7 +70,6 @@ radios.forEach((r)=>{
     r.onclick = () => {other_r.value = "";}
 });
 
-
 document.getElementById("req").onclick = openReq;
 document.getElementById("closeBtn").onclick = closeReq;
 
@@ -88,5 +85,34 @@ window.onload = function()
         document.getElementById('preloader').style.display = "none";
     }, 400);
 
-    
+    if(sessionStorage.getItem("IsSend") === "True")
+    {
+        openAlert();
+        sessionStorage.setItem("IsSend", "False")
+    }
+
 };
+
+function closeAlert()
+{
+    document.querySelector(".alert-parent").style.display = "none";
+}
+
+function openAlert()
+{
+    document.querySelector(".alert-parent").style.display = "flex";
+   
+    setTimeout(function() 
+    {
+        document.querySelector(".alert-parent").style.display = "none";
+    }, 2000);
+}
+
+
+let closeButton = document.querySelector(".btn-close");
+
+closeButton.onclick = closeAlert;
+
+let sendBtn = document.getElementById("send");
+
+sendBtn.onclick = () => sessionStorage.setItem("IsSend", "True");
