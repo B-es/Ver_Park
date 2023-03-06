@@ -20,6 +20,12 @@ function hasNumbers(t)
 	return regex.test(t);
 }    
 
+bot.onText(/\/id/, (msg, match) =>
+{
+	console.log("ID:");
+	console.log(msg.chat.id);
+});
+
 bot.onText(/\/reqs (.+)/, (msg, match) => {
 	
 	const chatId = process.env.chatID;
