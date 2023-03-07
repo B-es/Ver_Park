@@ -105,11 +105,8 @@ window.onload = function()
         openAlert();
         sessionStorage.setItem("IsSend", "False")
     }
-
-    let map = document.getElementById('map');
-    map.innerHTML += `<div style="position:relative;overflow:hidden;height:100%;width:100%;"><a href="https://yandex.ru/maps/38/volgograd/search/%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4%20(%D0%B3%D0%BE%D1%80%D1%81%D0%B0%D0%B4)/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;height:100%;width:100%;">Комсомольский сад (горсад) в Волгограде</a><a href="https://yandex.ru/maps/38/volgograd/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;height:100%;width:100%;">Волгоград</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=44.509396%2C48.709043&mode=search&sll=44.509396%2C48.709043&source=mapframe&text=%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4%20%28%D0%B3%D0%BE%D1%80%D1%81%D0%B0%D0%B4%29&utm_source=mapframe&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;height:100%;width:100%;"></iframe></div>`;
-
-};
+    
+};  
 
 function closeAlert()
 {
@@ -135,3 +132,34 @@ let sendBtn = document.getElementById("send");
 
 sendBtn.onclick = () => sessionStorage.setItem("IsSend", "True");
 
+if(!isMobile()){
+    AOS.init();
+}
+else
+{
+    document.head.querySelectorAll('link')[4].remove();
+}
+
+
+
+let map = document.getElementById('map');
+// Создаем новый observer (наблюдатель)
+let observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+// Выводим в консоль сам элемент
+        console.log(entry.target);
+// Выводим в консоль true (если элемент виден) или false (если нет)
+        console.log(entry.isIntersecting);
+        
+        if(entry.isIntersecting && map.innerHTML === ""){
+            map.innerHTML += `<div style="position:relative;overflow:hidden;height:100%;width:100%;"><a href="https://yandex.ru/maps/38/volgograd/search/%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4%20(%D0%B3%D0%BE%D1%80%D1%81%D0%B0%D0%B4)/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;height:100%;width:100%;">Комсомольский сад (горсад) в Волгограде</a><a href="https://yandex.ru/maps/38/volgograd/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;height:100%;width:100%;">Волгоград</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=44.509396%2C48.709043&mode=search&sll=44.509396%2C48.709043&source=mapframe&text=%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4%20%28%D0%B3%D0%BE%D1%80%D1%81%D0%B0%D0%B4%29&utm_source=mapframe&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;height:100%;width:100%;"></iframe></div>`;
+        }
+
+    });
+});
+
+// Задаем элемент для наблюдения
+let el = document.getElementById('map');
+
+// Прикрепляем его к «наблюдателю»
+observer.observe(el);
