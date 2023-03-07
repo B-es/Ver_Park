@@ -349,9 +349,192 @@
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ПОД СТАРОЕ РАЗРЕШЕНИЕ НОУТОВ (1360х768, 1366х768)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media (max-width:1366px) and (min-width:576px) {
+@media (max-width:1370px) and (min-width:576px) {
     #discription
     {
-        background-size: 100% 100%;
+        background-size: 100% 105%;
+        height: 570vh;
+      
+    }
+  
+    /* Анкета */
+    #anketa
+    {
+        height: 100%;
+        width: auto;
+    }
+
+    #anketa p
+    {
+        position: absolute;
+        font-size: 2em;
+        padding-bottom: 1vh;
+    }
+
+    #negr
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    #age-child, #count-child, #time-child, #data-child
+    {
+        padding: 1em;
+    }
+
+    form fieldset h2
+    {
+        font-size: 1.2em;
+    }
+  
+    form
+    {
+        padding-top: 0;    
+    }
+
+    #form
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #anketa-sec
+    {
+        width: 90%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #nn h2
+    {
+        padding-left: 0;
+        font-size: 1.1em;
+    }
+
+    form fieldset input
+    {
+        font-family: 'Roboto Condensed';
+        width: 30%;
+        font-size: 1rem;
+        
+    }
+    
+    #inputDate
+    {
+        align-self: center;
+    }
+    
+    #send
+    {
+        padding: 0.5rem;
+        width: 20%;
+        height: auto;
+        text-align: center;
+        bottom: 0;
+    }
+  
+    .map-sec
+    {
+        height: auto;
+    }
+  
+}
+
+/*1440x900*/
+@media (min-width: 1400px) and (max-width: 1500px) {
+    #discription
+    {
+        background-size: 100% 105%;
+        height: 500vh;
+      
+    }
+  
+    /* Анкета */
+    #anketa
+    {
+        height: 100%;
+        width: auto;
+    }
+
+    #anketa p
+    {
+        position: absolute;
+        font-size: 2em;
+        padding-bottom: 1vh;
+    }
+
+    #negr
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    #age-child, #count-child, #time-child, #data-child
+    {
+        padding: 1em;
+    }
+
+    form fieldset h2
+    {
+        font-size: 1.2em;
+    }
+  
+    form
+    {
+        padding-top: 0;    
+    }
+
+    #form
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #anketa-sec
+    {
+        width: 90%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #nn h2
+    {
+        padding-left: 0;
+        font-size: 1.1em;
+    }
+
+    form fieldset input
+    {
+        font-family: 'Roboto Condensed';
+        width: 30%;
+        font-size: 1rem;
+        
+    }
+    
+    #inputDate
+    {
+        align-self: center;
+    }
+    
+    #send
+    {
+        padding: 0.5rem;
+        width: 20%;
+        height: auto;
+        text-align: center;
+        bottom: 0;
+    }
+  
+    .map-sec
+    {
+        height: auto;
+    }
+  
+    .Pre-loaded
+    {
+        background-image: url(../pics/mobile_preloader_img.webp);
+        height: 100%;
+        width: 100%;
+        background-size: cover;
     }
 }
