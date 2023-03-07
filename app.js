@@ -2,9 +2,9 @@
 const 
     express = require('express'),
     path = require('path'),
-    app = express();
-    api_mail = require('./api/api_mail');
-    //api_tg_bot = require('./api/api_tg_bot');
+    app = express(),
+    api_mail = require('./api/api_mail'),
+    api_tg_bot = require('./api/api_tg_bot');
 
 require('dotenv').config()
 
@@ -30,8 +30,8 @@ app.post("/req", urlencodedParser, (req, res) => {
 
     console.log(request);
 
-    //api_mail.sendToEmail(request).catch(console.error);
-    //api_tg_bot.sendToBot(request).catch(console.error);
+    api_mail.sendToEmail(request).catch(console.error);
+    api_tg_bot.sendToBot(request).catch(console.error);
 
     res.redirect("/")
 });
