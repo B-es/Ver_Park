@@ -19,6 +19,11 @@
     src: url(fonts/RobotoCondensed-LightItalic.ttf);
 }
 
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: url(fonts/MerriweatherSans-Regular.ttf);
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
