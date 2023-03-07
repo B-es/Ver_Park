@@ -122,9 +122,14 @@
     
     #inputDate
     {
+        align-self: center;
+    }
+  
+    .form-control.form-control
+    {
         display: unset;
     }
-
+    
     #data-child
     {
         display: flex;
