@@ -1,1 +1,44 @@
-#video{background-color:aquamarine;width:100%;height:50vh;display:flex;align-items:center;flex-direction:row;justify-content:center}.perehod{position:absolute;margin-top:-20.5vh;height:25vh;width:100%;z-index:1}#perehod-routes{margin-top:-12vh;height:15vh}#perehod-program{margin-top:-5vh;height:15vh}#perehod-map{margin-top:-7vh;height:15vh}
+/* Переход */
+.perehod
+{
+  position: absolute;
+  margin-top: -20.5vh;
+  height: 25vh;
+  /* margin-top: -40vh;
+  height: 100vh; */
+  width: 100%;
+  z-index: 1;
+}
+
+#perehod-routes
+{
+  margin-top: -12vh;
+  height: 15vh;
+}
+
+#perehod-program
+{
+  margin-top: -5vh;
+  height: 15vh;
+}
+
+#perehod-map
+{
+  margin-top: -7vh;
+  height: 15vh;
+}
+
+/* .lower-text
+{
+  text-transform: lowercase;
+  background: rgba(54, 234, 9, 0);
+  font-size: .8em;
+  color: red;
+}
+
+.warning
+{
+  color: red;
+  background-color: white;
+  font-size: 1.5em;
+} */
