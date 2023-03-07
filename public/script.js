@@ -131,3 +131,4 @@ closeButton.onclick = closeAlert;
 let sendBtn = document.getElementById("send");
 
 sendBtn.onclick = () => sessionStorage.setItem("IsSend", "True");
+

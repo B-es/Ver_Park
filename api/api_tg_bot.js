@@ -14,13 +14,7 @@ async function sendToBot(data){
 	let chatID = process.env.chatID;
 	reqs.push(data);
 	await bot.sendMessage(chatID, compileMessage(data));
-}
-
-function hasNumbers(t)
-{
-	var regex = /\d/g;
-	return regex.test(t);
-}    
+}  
 
 bot.onText(/\/id/, (msg, match) =>
 {
@@ -49,16 +43,8 @@ bot.onText(/\/reqs (.+)/, (msg, match) => {
 		return;
 	}
 
-	if(hasNumbers(ms)){
-		if(Number(ms2) > reqs.length || Number(ms2) < 1) return;
-		bot.sendMessage(chatId, compileMessage(reqs.at(Number(ms2)-1)));
-	}	
-
-
 });
 
 bot.startPolling({clean:false, verbose:false});
-console.log(bot.isPolling());
-
 
 module.exports.sendToBot = sendToBot;
