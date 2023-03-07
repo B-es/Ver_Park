@@ -1,1 +1,116 @@
-@font-face{font-family:'AmaticSC Bold';src:url(fonts/AmaticSC-Bold.ttf)}@font-face{font-family:'AmaticSC Regular';src:url(fonts/AmaticSC-Regular.ttf)}@font-face{font-family:'Roboto Regular';src:url(fonts/RobotoCondensed-Regular.ttf)}@font-face{font-family:'Roboto Condensed';src:url(fonts/RobotoCondensed-LightItalic.ttf)}*,*::before,*::after{box-sizing:border-box}nav{background-color:yellowgreen;height:10vh;display:flex;align-items:center;align-content:center;justify-content:space-around}.center{background-color:black;height:400vh;width:100%}.alert-parent{position:absolute;width:100%;display:none;justify-content:center;z-index:300}.alert{width:auto}p{word-wrap:break-word}a{width:50vw;height:50vh;text-decoration:none;color:white}a:hover{color:rgb(0,180,75)}input{display:block;border-color:transparent;color:rgb(0,180,75);background-color:rgb(255,255,255);border-radius:.4em;height:5vh;transition:border ease-in-out .5s;width:20em;margin:0 auto .5em;outline:0}input:focus{border-style:groove;border-color:rgb(124,151,3);color:rgb(250,133,0);transition:border ease-in-out 0.5s;outline:0}input::placeholder{color:black;opacity:.4}span{text-align:center;color:white;font-size:2em}
+@font-face {
+    font-family: 'AmaticSC Bold';
+    src: url(fonts/AmaticSC-Bold.ttf);
+  }
+  
+@font-face {
+    font-family: 'AmaticSC Regular';
+    src: url(fonts/AmaticSC-Regular.ttf);
+} 
+
+@font-face 
+{
+  font-family: 'Roboto Regular';
+  src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(fonts/RobotoCondensed-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: url(fonts/MerriweatherSans-Regular.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+nav
+{
+    background-color: yellowgreen;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.center
+{
+    background-color: black;
+    height: 400vh;
+    width: 100%;
+}
+
+.alert-parent
+{
+    position: absolute;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    z-index: 300;
+}
+
+.alert
+{
+    width: auto;
+}
+
+p
+{
+    word-wrap: break-word;
+}
+
+a
+{
+    width: 50vw;
+    height: 50vh;
+    text-decoration: none;
+    color: white;
+    /* background-color: aqua; */
+}
+
+a:hover
+{
+    color: rgb(0, 180, 75);
+
+}
+
+input
+{
+    display: block;
+    border-color: transparent;
+    color: rgb(0, 180, 75);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    height: 5vh;
+    transition: border ease-in-out .5s;
+    width: 20em;
+    margin: 0 auto 0.5em;
+    outline: 0;
+}
+
+input:focus
+{
+    border-style:groove;
+    border-color: rgb(124, 151, 3);
+    color: rgb(250, 133, 0);
+    transition: border ease-in-out 0.5s;
+    outline: 0;
+}
+
+input::placeholder
+{
+    color: black;
+    opacity: 0.4;
+}
+
+span
+{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
