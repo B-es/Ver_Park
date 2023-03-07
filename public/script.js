@@ -30,12 +30,14 @@ function toContacts(){
 function openReq(){
     let anketa = document.getElementById("anketa");
     anketa.style.display = "flex";
+    document.body.style.overflow = "hidden";
 }
 
 function closeReq(){
     let anketa = document.getElementById("anketa");
     anketa.style.display = "none";
     document.querySelector('form').reset();
+    document.body.style.overflow = "auto";
 }
 
 function disableRadios(){
@@ -162,3 +164,4 @@ let el = document.getElementById('map');
 
 // Прикрепляем его к «наблюдателю»
 observer.observe(el);
+
