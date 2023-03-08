@@ -19,8 +19,13 @@
 
 .contacts p
 {
-  color:rgb(251, 255, 123);
-  font-size: 1.9em;
+  color: #fff;
+    text-shadow: 
+        -1px -1px 0 #156136,  
+        1px -1px 0 #156136,
+        -1px 1px 0 #156136,
+        1px 1px 0 #156136;
+  font-size: 1.5em;
 }
 
 .map-head

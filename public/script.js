@@ -87,6 +87,7 @@ radios.forEach((r)=>{
 });
 
 document.getElementById("req").onclick = openReq;
+document.getElementById("req2").onclick = openReq;
 document.getElementById("closeBtn").onclick = closeReq;
 
 document.getElementById("navProg").onclick = toProgram;
@@ -141,8 +142,6 @@ else
 {
     document.head.querySelectorAll('link')[4].remove();
 }
-
-
 
 let map = document.getElementById('map');
 // Создаем новый observer (наблюдатель)
