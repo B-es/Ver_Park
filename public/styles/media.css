@@ -349,7 +349,7 @@
     .map-content
     {
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #map
