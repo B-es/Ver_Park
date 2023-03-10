@@ -17,6 +17,7 @@
         height: auto;
         flex-direction: column;
         align-items: center;
+        font-size: 0.7em;
     }
 
     .nav-list
@@ -29,6 +30,11 @@
     .nav-list a
     {
         font-size: .99em;
+    }
+
+    .nav-tel
+    {
+        font-size: 1.5rem;
     }
 
     /* Анкета */

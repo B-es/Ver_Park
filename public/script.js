@@ -40,6 +40,19 @@ function closeReq(){
     document.body.style.overflow = "auto";
 }
 
+function openColab(){
+    let colab = document.getElementById("colab");
+    colab.style.display = "flex";
+    document.body.style.overflow = "hidden";
+    console.log("Rab")
+}
+
+function closeColab(){
+    let colab = document.getElementById("colab");
+    colab.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
 function disableRadios(){
     let r1 = document.getElementById("age_r1");
     let r2 = document.getElementById("age_r2");
@@ -93,6 +106,8 @@ document.getElementById("closeBtn").onclick = closeReq;
 document.getElementById("navProg").onclick = toProgram;
 document.getElementById("navUs").onclick = toUs;
 document.getElementById("navContacts").onclick = toContacts;
+document.getElementById("navColab").onclick = openColab;
+document.getElementById("colab").onclick = closeColab;
 //Загрузочный экран
 
 window.onload = function() 

@@ -24,6 +24,11 @@
     src: url(fonts/MerriweatherSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'ShantellSans Regular';
+    src: url(fonts/ShantellSans-Regular.ttf);
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -36,6 +41,7 @@ nav
     align-items: center;
     align-content: center;
     justify-content: space-around;
+    font-family:'ShantellSans Regular'
 }
 
 .center
