@@ -22,19 +22,28 @@
 
     .nav-list
     {
+        flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        height: 8vh;
+        height: auto;
     }
+
+    .nav-list li
+    {
+        height: auto; 
+        margin-top: .5em;
+    }
+
 
     .nav-list a
     {
-        font-size: .99em;
+        font-size: 1.35em;
     }
 
     .nav-tel
     {
         font-size: 1.5rem;
+        width: 100%;
     }
 
     /* Анкета */
@@ -334,12 +343,36 @@
     /* Маршруты */
     #routes
     {
-        height: 30vh;
+        height: auto;
     }
 
     #routes-img
     {
-        height: 30vh;
+        height: auto;
+    }
+
+    .routes-disc-text
+    {
+        width: 95%;
+        font-size: 1em;
+    }
+
+    .routes-disc-end
+    {
+        font-size: 1.1em;
+    }
+
+    #block-btn::before, #block-btn::after
+    {
+        width: 29%;
+        height: 2px;
+    }
+
+    #back-to-scheme1, #back-to-scheme2, #back-to-scheme3
+    {
+        width: 40%;
+        padding: .3em;
+        font-size: 1em;
     }
 
     /* Месторасположение */

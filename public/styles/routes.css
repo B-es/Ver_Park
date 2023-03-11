@@ -1,1 +1,73 @@
 #routes{height:auto;width:100%}#routes-img{height:auto;width:100%}
+
+#routes-disc
+{
+    height: auto;
+    width: 100%;
+}
+
+.routes-disc-head
+{
+    text-align: center;
+}
+
+.routes-disc-text
+{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+}
+
+.routes-disc-end
+{
+    text-align: center;
+}
+
+.routes-disc-head, .routes-disc-end
+{
+    color: #39E639;
+}
+
+#routes-disc-seventh-heaven, #routes-disc-cuckoo-nest, #routes-disc-bear-clubfoot
+{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    font-family: 'ShantellSans Regular';
+}
+
+#block-btn
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#block-btn::before, #block-btn::after
+{
+    content: '';
+    align-self: center;
+	width: 15%; /* Устанавливаем ширину в 100%, что сделает делает линию равной ширине тега заголовка */
+	height: 1px; /* Высота линий */
+    background: yellowgreen; /* Цвет линий */
+	border: solid #fff; /* Добавляем к линиям границу с цветом основного фона заголовка, для отступа от текста */
+	border-width: 0 30px; /* Отступ от текста */
+    transition: .5s;
+}
+
+@media (min-width: 576px) 
+{
+    #block-btn:hover::before, #block-btn:hover::after
+    {
+        width: 25%;
+        background: orange;
+    }
+}
+
+
+#back-to-scheme1, #back-to-scheme2, #back-to-scheme3
+{
+    width: 15%;
+    padding: .8em;
+}

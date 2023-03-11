@@ -13,8 +13,9 @@ function toBlock(block, where="center"){
 
 function toProgram(){
     let prog = document.getElementById("program");
-    if(isMobile()) toBlock(prog, "start");
-    else toBlock(prog);
+    // if(isMobile()) toBlock(prog, "start");
+    // else toBlock(prog);
+    toBlock(prog, "start");
 }
 
 function toUs(){
@@ -24,6 +25,12 @@ function toUs(){
 
 function toContacts(){
     let con = document.getElementById("toContacts");
+    toBlock(con, "start");
+}
+
+function toRoutes()
+{
+    let con = document.getElementById("routes");
     toBlock(con, "start");
 }
 
@@ -108,6 +115,11 @@ document.getElementById("navUs").onclick = toUs;
 document.getElementById("navContacts").onclick = toContacts;
 document.getElementById("navColab").onclick = openColab;
 document.getElementById("colab").onclick = closeColab;
+
+document.getElementById("back-to-scheme1").onclick = toRoutes;
+document.getElementById("back-to-scheme2").onclick = toRoutes;
+document.getElementById("back-to-scheme3").onclick = toRoutes;
+
 //Загрузочный экран
 
 window.onload = function() 
